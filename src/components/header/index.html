@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>davethompsonisme.com</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!--set the viewport-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="main-content center">
+   <div id="svg-container">
+   </div>
+
+
+  <div id="img-container">
+    <img src="img/me.png" id="my-img"></img>
+  </div>
+
+  <div id="skills-container">
+      <div class="skillsList" id="iDo">I do:</div>
+      <div class='align-right skillsList' id="webDesignText" onclick = "modalAction0()"><span>Web Design<br></span></div>
+      <div class='align-right skillsList' id="dataVizText" onclick = "modalAction1()"><span>Data Visualization</span></div>
+      <div class='align-right skillsList' id="statisticsText" onclick = "modalAction2()">and <span>Data Analysis</span></div>
+  </div>
+
+
+</div> <!--end main-content-->
+
+<div id="footer">
+    <span class="align-left" id="resumeLink"><a href="resume.html">Resume</a></span>
+    <span class="align-right" id="contactLink"><a href="mailto:david.w.thompson@utexas.edu?Subject=Hello%20Dave" target="_top">Contact</a></span>
+</div>
+
+
+  <!-- The Modals -->
+  <div id="modal-0" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+        <h1 class="modal-header">Web Design</h1>
+        <span class="close">&times;</span>
+        <p>I enjoy making web pages and web products from the ground up. Recently, I'm heavily into <em>React</em> and <em>Node</em> development.</p>
+        <p>As a software developer at Travis Central Appraisal District, I build internal Node, React, and Vue apps to manage customer flows, automate templating and printing, and assist with various business needs.</p>
+        <ul><h3>Commercial Work</h3>
+          <li><a href="http://www.mollywoodstudio.com" target="_blank">Mollywood Studio</a></li>
+          <li><a href="http://www.lilnonnas.com" target="_blank">'Lil Nonna's Pizzeria</a></li>
+        </ul>
+        <p>Check out my <a href="https://codepen.io/capndavet/" target="_blank">Codepen</a></p>
+     </div>
+  </div>
+
+
+  <div id="modal-1" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <h1 class="modal-header">Data Visualization</h1>
+      <span class="close">&times;</span>
+      <p>After a stint as Data Visualization Specialist at <a href="https://www.westat.com/">Westat</a>, I now do contract work as a private data visualization consultant. Let me know if you're interested in working together!</p>
+
+      <ul><h3>My Work:</h3>
+          <li><a href="infographics.html" target="_blank">Infographics</a></li>
+          <li><a href="tableau.html" target="_blank">Tableau</a></li>
+          <li><a href="d3.html" target="_blank">Web (D3)</a></li>
+          <li><a href="maps.html" target="_blank">Maps (QGIS)</a></li>
+      </ul>
+
+    </div>
+  </div>
+  <div id="modal-2" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <h1 class="modal-header">Statistics</h1>
+      <span class="close">&times;</span>
+      <p>As a former researcher, I know the impact that accurate and appropriate data analysis can make. I have several years of experience assisting others with data-driven research, including collection, processing, and analysis of data. I'd love to help you with similar work!</p>
+
+        <ul><h3>Things I've done:</h3>
+          <li>Managed survey-based research</li>
+          <li>Programmed in R (a lot)</li>
+          <li>Mined Twitter with Python</li>
+          <li>Tutored people in Statistics</li>
+          <li>Regression analysis and hypothesis testing</li>
+          <li>Heirarchical and time-series analysis</li>
+      </ul>
+    </div>
+
+
+
+
+
+<script type="text/javascript" src="javascript.js"></script>
+</body>
+</html>

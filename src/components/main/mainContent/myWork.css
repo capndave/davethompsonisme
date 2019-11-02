@@ -1,0 +1,19 @@
+#projects {
+    display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+	grid-template-rows: repeat(auto-fit, minmax(360px, 1fr));
+	/* grid-auto-rows: 200px; */
+	gap: 20px;
+	counter-reset: item;
+	margin: auto;
+}
+.project {
+  background-color: grey;
+  border-radius: 1rem;
+  padding: 1rem;
+  counter-increment: item;
+}
+
+&::after {
+    content: counter(item);
+}
