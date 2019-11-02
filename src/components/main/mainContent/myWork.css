@@ -1,17 +1,18 @@
+#my-work {
+    flex: 1;
+}
+
 #projects {
     display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-	grid-template-rows: repeat(auto-fit, minmax(360px, 1fr));
-	/* grid-auto-rows: 200px; */
-	gap: 20px;
-	counter-reset: item;
+	gap: 1rem;
+	grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+	grid-template-rows: repeat(auto-fit, minmax(375px, 1fr));
 	margin: auto;
 }
 .project {
-  background-color: grey;
-  border-radius: 1rem;
-  padding: 1rem;
-  counter-increment: item;
+  background-color: black;
+  border-radius: 1.25rem;
+  height: 100%;
 }
 
 &::after {

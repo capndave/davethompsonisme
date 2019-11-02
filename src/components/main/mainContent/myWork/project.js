@@ -20,11 +20,11 @@ class Project extends React.Component {
   render() {
     return (
       <ReactCardFlip isFlipped={this.state.isFlipped} flipDirection='horizontal'>
-        <div className='project' key='front' onClick={this.handleClick}>
+        <div className='project' key='back' onClick={this.handleClick}>
           <h3>{this.props.data.name}</h3>
           <h5>{this.props.data.description}</h5>
         </div>
-        <div className='project' key='back' onClick={this.handleClick}>
+        <div className='project' key='front' onClick={this.handleClick}>
         <img
           class='project-image'
           src={this.props.data.image}>

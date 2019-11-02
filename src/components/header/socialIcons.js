@@ -1,4 +1,5 @@
 import React from "react"
+import './socialIcons.css'
 
 class SocialIcons extends React.Component {
   render () {
@@ -7,19 +8,19 @@ class SocialIcons extends React.Component {
         className='display-flex justify-content-space-around width-100pct'>
           <div 
             alt="email"
-            className="icon-mail"
+            className="icon icon-mail"
           />
           <div
             alt="github" 
-            className="icon-github-circled-alt2"
+            className="icon icon-github-circled-alt2"
           />
           <div
             alt="linkedin" 
-            className="icon-linkedin"
+            className="icon icon-linkedin"
           />
           <div
             alt="twitter" 
-            className="icon-twitter"
+            className="icon icon-twitter"
           />
       </section>
     )
