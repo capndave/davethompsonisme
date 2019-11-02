@@ -1,6 +1,6 @@
 #header {
-  background-color: grey;
   flex: 0; /* element won't flex */
-  margin: 1rem auto 0 auto; /* center this element */
+  margin: 0 auto 0 auto; /* center this element */
+  padding-top: 1rem;
   width: calc(100% - 2rem); /* take total width minus margin space */
 }

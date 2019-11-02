@@ -55,7 +55,8 @@ path {
   
   .animated {
     animation: draw .2s linear forwards;
-    stroke: var(--accent-color-pink);
+    /* stroke: var(--accent-color-pink); */
+    stroke: black;
     stroke-width: 4px;
   }
   

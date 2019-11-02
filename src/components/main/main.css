@@ -1,7 +1,10 @@
 #main {
   align-items: center;
+  background-color: pink;
   display: inherit; /* flex */
   flex: 1; /* element will stretch */
   justify-content: center; 
-  width: 100vw;
+  margin: 0 auto;
+  width: calc(100% - 2rem);
+
 }

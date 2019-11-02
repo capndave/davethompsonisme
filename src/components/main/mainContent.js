@@ -2,8 +2,7 @@ import React from 'react'
 import './mainContent.css'
 import MyWork from './mainContent/myWork'
 import AboutMe from './mainContent/aboutMe'
-import chevronLeftURL, {ReactComponent as ChevronLeft} from '../../assets/chevron-left.svg'
-import chevronRightURL, {ReactComponent as ChevronRight} from '../../assets/chevron-right.svg'
+import '../../assets/icons/css/mfglabs.css'
 
 class MainContent extends React.Component {
   constructor(props) {
@@ -36,24 +35,20 @@ class MainContent extends React.Component {
 
     return (
       <section id='scroll-container'>
-        <img
-          alt='chevron-left'
-          className='chevron'
+        <div 
+          className="icon-left-open"
           onClick={this.toggleActiveElementIndex}
-          src={chevronLeftURL}
-        />
+        ></div>
         <article id='scroll-content'>
           <h2 className='text-align-center width-100-percent'>
             {activeElement.name}
           </h2>
           {activeElement.content}
         </article>
-        <img
-          alt="chevron-right"
-          className='chevron'
+        <div
+          className="icon-right-open"
           onClick={this.toggleActiveElementIndex}
-          src={chevronRightURL}
-        />
+        ></div>
       </section>
     )
   }
