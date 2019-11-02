@@ -6,21 +6,25 @@ class SocialIcons extends React.Component {
     return (
       <section id='social-icons'
         className='display-flex justify-content-space-around width-100pct'>
-          <div 
+          <a 
             alt="email"
             className="icon icon-mail"
+            href="mailto:david.w.thompson@utexas.edu"
           />
-          <div
+          <a
             alt="github" 
             className="icon icon-github-circled-alt2"
+            href="https://github.com/capndave"
           />
-          <div
+          <a
             alt="linkedin" 
             className="icon icon-linkedin"
+            href="https://www.linkedin.com/in/davethompsonisme/"
           />
-          <div
+          <a
             alt="twitter" 
             className="icon icon-twitter"
+            href="https://twitter.com/capndavet"
           />
       </section>
     )
