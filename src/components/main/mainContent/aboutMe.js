@@ -7,9 +7,10 @@ class AboutMe extends React.Component {
       const employer = 'Travis Central Appraisal District'
       return (
           <article id='about-me'>
-            I'm a Full Stack Web Developer, data geek, and former musician/social worker/social sciences researcher/data visualization engineer.
-            That puts me equally at home with coding, graphic design, manageing survey research, doing regression analysis on huge data sets and managing databases.
-            See some of the things I've built <span>here</span> 
+            <p>I build websites and apps for small businesses, and am Lead Software Engineer at <a href="https://www.traviscad.org/">Travis Central Appraisal District</a>.</p>            
+            <p>Before becoming a developer I played rock 'n roll, did social work, worked as a data and policy consultant, and made pretty graphs as a data visualization specialist.</p>
+            <p>I'm good at UI and graphic design, problem-solving, and making all the pieces fit together.</p>
+            <p>Click right to see some things I've built.</p>
           </article>
       )
   }
