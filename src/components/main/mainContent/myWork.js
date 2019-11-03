@@ -12,56 +12,37 @@ class MyWork extends React.Component {
   render () {
       const data = [
         {
-          name: 'TCAD Taxpayer Signin',
-          builtWith: 'Vue and Vuex. Back end build with Node, Docker, SQL Server and Redis.',
-          description: (
-            <div>Allows taxpayers to sign in when they come to TCAD for an Appraisal Review hearing.</div>
-          ),
+          name: 'TCAD ARB Apps',
+          builtWith: 'Vue and Vuex. Back end built with Node, Docker, SQL Server and Redis.',
+          description: 'Suite of five applications facilitating customer sign in and management, similar to what they use at the DMV.',
           image: taxpayerSignin,
-          link: null
-        },
-        {
-          name: 'TCAD Taxpayer Panel Management',
-          builtWith: 'Vue. Back end build with Node, Docker, SQL Server and Redis.',
-          description: (
-            <div>Allows TCAD staff to manage customer workflow.</div>
-          ),
-          image: taxpayerPanel,
           link: null
         },
         {
           name: 'Bluebonnet Records',
           builtWith: 'Webpack, HTML, CSS, and JavaScript.',
-          description: (
-            <div>Commercial website for Bluebonnet Records in Lockhart, TX></div>
-          ),
+          description: 'Commercial website for Bluebonnet Records in Lockhart, TX',
           image: bluebonnetRecords,
           link: 'bluebonnet-records.com'
         },
         {
           name: 'Mollywood Studio',
           builtWith: 'HTML, CSS, and JavaScript.',
-          description: (
-            <div>Commercial website for Mollywood Studio photography in Los Angeles, CA></div>
-          ),
+          description: 'Commercial website for Mollywood Studio photography in Los Angeles, CA',
           image: mollywoodStudio,
           link: 'mollywoodstudio.com'
         },
         {
           name: 'Lil Nonna\'s',
           builtWith: 'HTML, CSS, and JavaScript. Uses Google Sheets as a minimal CMS.',
-          description: (
-            <div>Commercial website for Lil Nonna's Pizza in Austin, TX></div>
-          ),
+          description: 'Commercial website for Lil Nonna\'s Pizza in Austin, TX',
           image: lilNonnas,
           link: 'lilnonnas.com'
         },
         {
           name: 'Rare Darey',
           builtWith: 'React. Site in progress!',
-          description: (
-            <div>Commercial website for Rare Darey, manufacturer of dairy-free cheese</div>
-          ),
+          description: 'Commercial website for Rare Darey, dairy-free cheese maker',
           image: rareDarey,
           link: 'raredarey.com'
         }
