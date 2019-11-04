@@ -18,7 +18,6 @@ class Project extends React.Component {
     this.setState(prevState => ({ isFlipped: !prevState.isFlipped }))
   }
 
-
   render() {
 
     const link =
@@ -29,16 +28,20 @@ class Project extends React.Component {
     return (
       <ReactCardFlip isFlipped={this.state.isFlipped} flipDirection='horizontal'>
         <div className='project back' key='back' onClick={this.handleClick}>
-          <h3>{this.props.data.name}</h3>
-          <p>{this.props.data.description}</p>
-          <p>Made with {this.props.data.builtWith}</p>
-          <p>{link}</p>
+          <div className='text'>
+            <h3>{this.props.data.name}</h3>
+            <p>{this.props.data.description}</p>
+            <p>Made with {this.props.data.builtWith}</p>
+            <p>{link}</p>
+          </div>
         </div>
         <div className='project front' key='front' onClick={this.handleClick}>
+          <div>
           <img
-            class='project-image'
+            className='image'
             src={this.props.data.image}>
           </img>
+          </div>
         </div>
       </ReactCardFlip>
     )

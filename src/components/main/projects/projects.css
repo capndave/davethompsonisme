@@ -6,15 +6,25 @@
     display: grid;
 	gap: 1rem;
 	grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
-	grid-template-rows: repeat(auto-fit, minmax(375px, 1fr));
-	margin: auto;
 }
 .project {
-  background-color: white;
+  background-color: cadetblue;
   border-radius: 1.25rem;
-  height: 100%;
+  position: relative;
+  padding-top: 100%; /* to ensure content is centered and this element is square */
 }
-
-&::after {
-    content: counter(item);
+.project .text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%; 
+}
+.project .image {
+  border-radius: 1.25rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%; 
 }
