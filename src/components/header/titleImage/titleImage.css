@@ -57,7 +57,7 @@ path {
     animation: draw .2s linear forwards;
     /* stroke: var(--accent-color-pink); */
     stroke: black;
-    stroke-width: 4px;
+    stroke-width: 3px;
   }
   
   .fadeIn {
