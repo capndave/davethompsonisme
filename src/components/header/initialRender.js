@@ -18,13 +18,22 @@ function initialRender(groups) {
   }
 
   let i = 0;
-  triggerDelayedAnimation(100, 22); // part 1
+  // Trigger 1st line animation
+  triggerDelayedAnimation(100, 22);
 
-  setTimeout(function () { // 2nd line animation
+  // 2nd line animation
+  setTimeout(() => {
+    console.log('Setting off second animation')
     i = 22;
     triggerDelayedAnimation(200, 28)
-  }, // part 2
-    2500)
+  }, 2500)
+  
+  // 3rd line animation
+  setTimeout(() => {
+    console.log('Setting off second animation')
+    i = 23;
+    triggerDelayedAnimation(200, 29)
+  }, 3700)
 }
 
 module.exports = initialRender

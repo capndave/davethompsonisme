@@ -1,6 +1,6 @@
 import React from "react"
-import TitleImage from './titleImage'
-import SocialIcons from './socialIcons'
+import TitleImage from './titleImage/titleImage'
+import SocialIcons from './socialIcons/socialIcons'
 import './header.css'
 
 class Header extends React.Component {

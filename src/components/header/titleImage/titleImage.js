@@ -1,7 +1,7 @@
 import React from "react"
 // import DesktopTitle from './svgs/desktopTitle.inline.svg'
-import { ReactComponent as MobileTitle } from './svgs/mobileTitle.inline.svg'
-import initialRender from './initialRender.js'
+import { ReactComponent as MobileTitle } from '../svgs/mobileTitle.inline.svg'
+import initialRender from '../initialRender'
 import './titleImage.css'
 
 class TitleImage extends React.Component {
