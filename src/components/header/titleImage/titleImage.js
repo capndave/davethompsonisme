@@ -1,6 +1,6 @@
 import React from "react"
-import { ReactComponent as DesktopTitle } from '../svgs/desktopTitle.svg'
-import { ReactComponent as MobileTitle } from '../svgs/mobileTitle.svg'
+import { ReactComponent as DesktopTitle } from '../../../assets/titles/desktopTitle.svg'
+import { ReactComponent as MobileTitle } from '../../../assets/titles/mobileTitle.svg'
 import initialRender from '../initialRender'
 import './titleImage.css'
 
@@ -13,11 +13,11 @@ class TitleImage extends React.Component {
     initialRender(groups); //sets off initial title render on gs
   }
 
-  
-
   render() {
-    console.log(window.innerWidth)
+
+    /* Get title based on width of viewport */
     const titleToUse = window.innerWidth > 750 ? <DesktopTitle /> : <MobileTitle />
+
     return (
       <div className="titleImage">
         { titleToUse }
