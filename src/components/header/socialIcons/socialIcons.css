@@ -1,8 +1,16 @@
-a {
+#socialIcons {
+  margin-top: 1rem;
+}
+
+#socialIcons [class^="icon"] {
+  font-size: 1.5rem;
+}
+
+#socialIcons a {
   color: inherit;
   text-decoration: none;
 }
 
-.icon:hover {
-  color: pink;
+#socialIcons .icon:hover {
+  color: var(--color-accent);
 }

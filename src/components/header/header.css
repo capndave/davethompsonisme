@@ -1,4 +1,5 @@
 #header {
+  /* background-color: var(--color-accent) */
   flex: 0; /* element won't flex */
   margin: 0 auto 0 auto; /* center this element */
   padding-top: 1rem;

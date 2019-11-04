@@ -4,7 +4,7 @@ import './socialIcons.css'
 class SocialIcons extends React.Component {
   render () {
     return (
-      <section id='social-icons'
+      <section id='socialIcons'
         className='display-flex justify-content-space-around width-100pct'>
           <a 
             alt="email"
