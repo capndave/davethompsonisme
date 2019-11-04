@@ -10,7 +10,7 @@
   font-style: normal;
 }
 
-
+/* Set Project Defaults */
 html, body, #root {
   margin: 0;
   padding: 0;
@@ -19,11 +19,21 @@ html, body, #root {
   font-size: calc(20px + 1vw);
 }
 
+/* Color Variables */
+:root {
+  --color-background: #edddd4;
+  --color-foreground: #197278; /* dark teal */
+  --color-dark: #283d38; /* brackish */
+  --color-accent: #c44536; /* light orange */
+  --color-dark-accent: #772e25; /* rust */
+}
+
 .App {
   display: flex;
   flex-direction: column;
   text-align: center;
   min-height: 100vh;
+  background-color: var(--color-background);
 }
 
 .App-logo {

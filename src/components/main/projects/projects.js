@@ -14,7 +14,7 @@ class Projects extends React.Component {
       {
         name: 'TCAD ARB Apps',
         builtWith: 'Vue and Vuex. Back end built with Node, Docker, SQL Server and Redis.',
-        description: 'Suite of five applications facilitating customer sign in and management, similar to what they use at the DMV.',
+        description: 'Suite of applications facilitating customer sign in and management, similar to what they use at the DMV.',
         image: taxpayerSignin,
         link: null
       },

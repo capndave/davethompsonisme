@@ -1,7 +1,7 @@
 .project {
   display: flex;
   flex-direction: column;
-  font-size: .75rem;
+  font-size: .7rem;
   text-align: left;
 }
 
@@ -10,7 +10,7 @@
 }
 
 .project p {
-  margin: .75rem 0 0 0;
+  margin: .7rem 0 0 0;
 }
 
 .project-image {

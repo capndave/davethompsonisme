@@ -1,8 +1,6 @@
 #main {
-  align-items: center;
   display: inherit; /* flex */
   flex: 1; /* element will stretch */
-  justify-content: center; 
   margin: 0 auto;
   width: calc(100% - 2rem);
 }
