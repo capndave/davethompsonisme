@@ -31,14 +31,10 @@ html, body, #root {
 
 .App {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   text-align: center;
   min-height: 100vh;
   background-color: var(--color-background);
-}
-
-.App-logo {
-  height: 40vmin;
 }
 
 .App-header {
@@ -52,9 +48,21 @@ html, body, #root {
   color: white;
 }
 
-.App-link {
-  color: #09d3ac;
+/* Specific to outer app component */
+.icon-right-open, .icon-left-open {
+  font-size: 2rem;
 }
+
+.icon-right-open:hover, .icon-left-open:hover {
+  color: var(--color-accent);
+}
+
+#content {
+  flex-grow: 1;
+}
+
+
+/* General Use Shared Classes */
 
 .display-flex {
   display: flex;
