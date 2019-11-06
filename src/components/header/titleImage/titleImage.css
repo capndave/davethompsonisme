@@ -59,6 +59,11 @@ path {
     stroke: black;
     stroke-width: 3px;
   }
+
+  .visible {
+    stroke: black;
+    stroke-width: 3px;
+  }
   
   .fadeIn {
     -webkit-animation-duration: 1s;

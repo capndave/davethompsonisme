@@ -1,16 +1,24 @@
 import React from "react"
 import { ReactComponent as DesktopTitle } from '../../../assets/titles/desktopTitle.svg'
 import { ReactComponent as MobileTitle } from '../../../assets/titles/mobileTitle.svg'
-import initialRender from '../initialRender'
+import { animate, appear } from '../applyStyle'
 import './titleImage.css'
+import cookie from './cookie'
 
 class TitleImage extends React.Component {
 
   componentDidMount() {
-    /* Render svg and animate its groups */
-    const svgs = document.getElementsByTagName("svg")
-    const groups = svgs[0].querySelectorAll("g")  // get gs from current
-    initialRender(groups); //sets off initial title render on gs
+    
+    /* Check for cookie (shows whether logged in in the past day) */
+    if (!cookie.exists()) {
+      animate() 
+    } else {
+      appear() 
+    }
+      
+    /* Set cookie */
+    cookie.set()
+
   }
 
   render() {

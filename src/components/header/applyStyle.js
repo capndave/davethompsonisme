@@ -5,7 +5,11 @@ function animateGroup(group) {
   group.childNodes[0].classList.add("animated")                             // adds a class for the animation
 }
 
-function initialRender(groups) {
+function animate() {
+
+  /* If no cookie, render svg and animate its groups */
+  const svgs = document.getElementsByTagName("svg")
+  const groups = svgs[0].querySelectorAll("g")  // get gs from current
 
   function triggerDelayedAnimation(time, maxIterations) {
     setTimeout(function () {                                                  // sets a timeout for delay
@@ -36,6 +40,15 @@ function initialRender(groups) {
   }, 3700)
 }
 
-module.exports = initialRender
+function appear() {
+  const svgs = document.getElementsByTagName("svg")
+  console.log(svgs)
+  svgs[0].classList.add("visible")
+}
+
+module.exports = {
+  animate,
+  appear
+}
 
 
