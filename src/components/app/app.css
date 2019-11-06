@@ -14,7 +14,6 @@
 html, body, #root {
   margin: 0;
   padding: 0;
-  clear: both;
   font-family: Courier, 'Courier New', sans-serif;
   font-size: calc(20px + 1vw);
 }
@@ -23,13 +22,15 @@ html, body, #root {
 :root {
   --color-background: #edddd4;
   --color-foreground: #197278; /* dark teal */
-  --color-dark: #283d38; /* brackish */
+  /* --color-dark: #283d38; brackish */
+  --color-dark: black;
   --color-accent: indigo; /* indigo */
   /* --color-accent: #c44536;  light orange */
   --color-dark-accent: #772e25; /* rust */
 }
 
 .App {
+  align-items: flex-start;
   display: flex;
   flex-direction: row;
   text-align: center;
@@ -37,19 +38,11 @@ html, body, #root {
   background-color: var(--color-background);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
 /* Specific to outer app component */
 .icon-right-open, .icon-left-open {
+  align-self: baseline; /* place on top of pg */
+  position: relative;   /* so that it won't enlarge parent el */
+  top: calc(50vh - 2rem);
   font-size: 2rem;
 }
 

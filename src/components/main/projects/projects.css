@@ -1,28 +1,6 @@
 #projects {
   display: grid;
-	gap: 1rem;
+	gap: .5rem;
   /* grid-template-columns: repeat(auto-fit, minmax(375px, 1fr)); */
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-}
-.project {
-  border-radius: 1.25rem;
-  position: relative;
-  padding-top: 100%; /* to ensure content is centered and this element is square */
-}
-.project .text, .project .image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%; 
-}
-
-.project .text {
-  left: .7rem;
-  height: 100%;
-  width: calc(100% - 1.4rem); 
-}
-
-.project .image {
-  border-radius: 1.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }

@@ -1,7 +1,10 @@
 .project {
+  border-radius: 1rem;
+  background-color: var(--color-dark);
   display: flex;
   flex-direction: column;
-  font-size: .7rem;
+  padding-top: 100%; /* to ensure content is centered and this element is square */font-size: .7rem;
+  position: relative;
   text-align: left;
 }
 
@@ -17,4 +20,23 @@
    max-width: 100%;
    max-height: 100%;
    border-radius: 1rem;
+}
+
+.project .text, .project .image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%; 
+}
+
+.project .text {
+  color: white;
+  left: .7rem;
+  height: 100%;
+  width: calc(100% - 1.4rem); 
+}
+
+.project .image {
+  border-radius: 1rem;
 }
