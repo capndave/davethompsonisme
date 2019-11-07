@@ -64,33 +64,3 @@ path {
     stroke: black;
     stroke-width: 3px;
   }
-  
-  .fadeIn {
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-name: fadeIn;
-    animation-name: fadeIn;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-  }
-  
-  .appear {
-    animation-timing-function: ease;
-    -webkit-animation-duration: .5s;
-    animation-duration: .5s;
-    -webkit-animation-name: appear;
-    animation-name: appear;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-  }
-  
-  .colorFade {
-    -webkit-animation-timing-function: cubic-bezier(0, 0.055, 0.675, 0.19); /* Safari 4.0 - 8.0 */
-    animation-timing-function: cubic-bezier(0, 0.03, 0.675, 0.19);
-    -webkit-animation-duration: 2.3s;
-    animation-duration: 2.4s;
-    -webkit-animation-name: colorFade;
-    animation-name: colorFade;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-  }

@@ -13,7 +13,8 @@ class TitleImage extends React.Component {
     if (!cookie.exists()) {
       animate() 
     } else {
-      appear() 
+      // appear() 
+      animate() 
     }
       
     /* Set cookie */
