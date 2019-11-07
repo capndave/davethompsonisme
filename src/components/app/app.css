@@ -64,6 +64,14 @@ html, body, #root {
 .justify-content-space-around {
   justify-content: space-around;
 }
+ 
+/********
+* Class to define opacity, will change
+* with animations (for all content except title
+********/
+.to-fade-in {
+  opacity: 0;
+}
 
 .width-100pct {
   width: 100%;

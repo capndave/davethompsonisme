@@ -12,8 +12,6 @@ class Project extends React.Component {
   }
 
   handleClick(e) {
-    console.log('clicked')
-    console.log(this.props)
     e.preventDefault()
     this.setState(prevState => ({ isFlipped: !prevState.isFlipped }))
   }
