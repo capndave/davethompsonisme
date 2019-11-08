@@ -21,7 +21,7 @@ const Main = function (props) {
 
   return (
     <section 
-      className={props.visible ? '' : 'to-fade-in'}
+      className={props.visible ? '' : 'opacity-0'}
       id='main'
     >
       <article id='main-content'>

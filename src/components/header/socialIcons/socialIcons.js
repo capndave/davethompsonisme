@@ -5,7 +5,7 @@ function SocialIcons(props) {
   return (
     <section id='socialIcons'
       className={`display-flex justify-content-space-around width-100pct 
-        ${props.visible ? '' : 'to-fade-in'}`}>
+        ${props.visible ? '' : 'opacity-0'}`}>
       <a
         alt="email"
         className="icon icon-mail"
