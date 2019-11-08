@@ -7,7 +7,7 @@ function Header(props) {
   return (
     <header id='header'>
       <TitleImage />
-      <SocialIcons visibility={props.visibility} />
+      <SocialIcons visible={props.visible} />
     </header>
   )
 }

@@ -20,7 +20,10 @@ const Main = function (props) {
   let activeElement = carouselElements[props.activeElementIndex]
 
   return (
-    <section id='main'>
+    <section 
+      className={props.visible ? '' : 'to-fade-in'}
+      id='main'
+    >
       <article id='main-content'>
         <h2 className='text-align-center width-100-percent'>
           {activeElement.name}

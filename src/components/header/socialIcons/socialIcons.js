@@ -4,7 +4,8 @@ import './socialIcons.css'
 function SocialIcons(props) {
   return (
     <section id='socialIcons'
-      className='display-flex justify-content-space-around width-100pct'>
+      className={`display-flex justify-content-space-around width-100pct 
+        ${props.visible ? '' : 'to-fade-in'}`}>
       <a
         alt="email"
         className="icon icon-mail"

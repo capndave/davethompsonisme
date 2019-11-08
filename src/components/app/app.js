@@ -11,7 +11,7 @@ class App extends React.Component {
     super(props)
     this.state = {
       activeElementIndex: 0,
-      visible: true
+      visible: false
     }
     this.toggleActiveElementIndex = this.toggleActiveElementIndex.bind(this)
   }
@@ -29,11 +29,19 @@ class App extends React.Component {
     if (!cookie.exists()) {
       animate()
       setTimeout(() => {
-        this.state.visible = true;
+        this.setState({
+          visible: true
+        })
       }, 3000)
     } else {
+      
+      /* Make Title Visible */
       appear() 
-      /* make things visible */
+
+      /* Make Content Visible */
+      this.setState({
+        visible: true
+      })
     }
 
     /* Set cookie */
@@ -46,20 +54,20 @@ class App extends React.Component {
     return (
       <div className="App">
         <div
-          className={'icon-left-open ' + (this.state.visible ? null : 'to-fade-in')}
+          className={'icon-left-open ' + (this.state.visible ? '' : 'to-fade-in')}
           onClick={this.toggleActiveElementIndex}
         ></div>
         <div id="content">
           <Header
-            visibility={this.state.visibility}
+            visible={this.state.visible}
           />
           <Main
             activeElementIndex={this.state.activeElementIndex}
-            visibility={this.state.visibility}
+            visible={this.state.visible}
           />
         </div>
         <div
-          className={'icon-right-open ' + (this.state.visible ? null : 'to-fade-in')}
+          className={'icon-right-open ' + (this.state.visible ? '' : 'to-fade-in')}
           onClick={this.toggleActiveElementIndex}
         ></div>
       </div>
