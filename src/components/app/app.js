@@ -11,6 +11,7 @@ class App extends React.Component {
     super(props)
     this.state = {
       activeElementIndex: 0,
+      fadeIn: false,
       visible: false
     }
     this.toggleActiveElementIndex = this.toggleActiveElementIndex.bind(this)
@@ -26,13 +27,14 @@ class App extends React.Component {
   componentDidMount() {
 
     /* Check for cookie (shows whether logged in in the past day) */
-    if (!cookie.exists()) {
+    if (cookie.exists()) {
       animate()
-      setTimeout(() => {
-        this.setState({
-          visible: true
-        })
-      }, 3000)
+      // setTimeout(() => {
+      //   this.setState({
+      //     visible: true
+      //   })
+      // }, 5000)
+
     } else {
       
       /* Make Title Visible */
@@ -44,7 +46,7 @@ class App extends React.Component {
       })
     }
 
-    /* Set cookie */
+    /* Set/update cookie - shows site has been visited */
     cookie.set()
 
   }
@@ -54,7 +56,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <div
-          className={'icon-left-open ' + (this.state.visible ? '' : 'to-fade-in')}
+          className={'icon-left-open ' + (this.state.visible ? '' : 'opacity-0')}
           onClick={this.toggleActiveElementIndex}
         ></div>
         <div id="content">
@@ -67,7 +69,7 @@ class App extends React.Component {
           />
         </div>
         <div
-          className={'icon-right-open ' + (this.state.visible ? '' : 'to-fade-in')}
+          className={'icon-right-open ' + (this.state.visible ? '' : 'opacity-0')}
           onClick={this.toggleActiveElementIndex}
         ></div>
       </div>
