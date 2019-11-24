@@ -23,15 +23,6 @@ class App extends React.Component {
     })
   }
 
-  animateTitle() {
-    title.animate()
-    // setTimeout(() => {
-    //   this.setState({
-    //     visible: true
-    //   })
-    // }, 5000)
-  }
-
   revealContent() {
     /* Make Title Visible */
     title.appear()
@@ -45,7 +36,8 @@ class App extends React.Component {
   handleAppearance() {
     /* Check for cookie (shows whether logged in in the past day) */
     if (cookie.exists()) {
-      this.animateTitle()
+      title.animate()
+        .then(this.revealContent)
     } else {
       this.revealContent()
     }
