@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '../header/header'
 import Main from '../main/main'
 import './app.css'
-import { animate, appear } from '../../mixins/applyStyle'
+import title from '../../mixins/applyStyle'
 import cookie from '../../mixins/cookie'
 
 class App extends React.Component {
@@ -18,37 +18,43 @@ class App extends React.Component {
   }
 
   toggleActiveElementIndex() {
-    console.log('Clicked toggleActiveElementIndex')
     this.setState({
       activeElementIndex: +!this.state.activeElementIndex
     })
   }
 
-  componentDidMount() {
+  animateTitle() {
+    title.animate()
+    // setTimeout(() => {
+    //   this.setState({
+    //     visible: true
+    //   })
+    // }, 5000)
+  }
 
+  revealContent() {
+    /* Make Title Visible */
+    title.appear()
+
+    /* Make Content Visible */
+    this.setState({
+      visible: true
+    })
+  }
+
+  handleAppearance() {
     /* Check for cookie (shows whether logged in in the past day) */
     if (cookie.exists()) {
-      animate()
-      // setTimeout(() => {
-      //   this.setState({
-      //     visible: true
-      //   })
-      // }, 5000)
-
+      this.animateTitle()
     } else {
-      
-      /* Make Title Visible */
-      appear() 
-
-      /* Make Content Visible */
-      this.setState({
-        visible: true
-      })
+      this.revealContent()
     }
-
     /* Set/update cookie - shows site has been visited */
     cookie.set()
+  }
 
+  componentDidMount() {
+    this.handleAppearance()
   }
 
   render() {

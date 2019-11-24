@@ -48,6 +48,7 @@ function appear() {
 
 module.exports = {
   animate,
+  animateGroup,
   appear
 }
 
