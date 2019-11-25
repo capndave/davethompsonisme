@@ -79,7 +79,6 @@ html, body, #root {
 ********/
 
 .fade-in {
-  /* opacity: 0; */
   animation: fade-in 5s;
 }
 

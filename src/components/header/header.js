@@ -7,7 +7,10 @@ function Header(props) {
   return (
     <header id='header'>
       <TitleImage />
-      <SocialIcons visible={props.visible} />
+      <SocialIcons
+       visible={props.visible}
+       fadeIn={props.fadeIn}
+      />
     </header>
   )
 }
