@@ -30,20 +30,25 @@ html, body, #root {
 }
 
 .App {
-  align-items: flex-start;
+  background-color: var(--color-background);
   display: flex;
   flex-direction: row;
   text-align: center;
   min-height: 100vh;
-  background-color: var(--color-background);
+  padding-bottom: 1rem;
 }
 
 /* Specific to outer app component */
 .icon-right-open, .icon-left-open {
   align-self: baseline; /* place on top of pg */
-  position: relative;   /* so that it won't enlarge parent el */
+  position: fixed;   /* so that it won't enlarge parent el */
   top: calc(50vh - 2rem);
   font-size: 2rem;
+}
+
+.icon-right-open {
+  right: 0;
+
 }
 
 .icon-right-open:hover, .icon-left-open:hover {
@@ -51,7 +56,10 @@ html, body, #root {
 }
 
 #content {
-  flex-grow: 1;
+  /* flex-grow: 1; */
+  flex: initial;
+  width: calc(100% - 5rem);
+  margin-left: 2.5rem;
 }
 
 
@@ -74,8 +82,7 @@ html, body, #root {
 }
  
 /********
-* Class to define opacity, will change
-* with animations (for all content except title
+* fade-in class will change with animations (for all content except title
 ********/
 
 .fade-in {
@@ -90,3 +97,5 @@ html, body, #root {
     opacity: 1;
   }
 }
+
+

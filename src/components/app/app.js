@@ -56,7 +56,6 @@ class App extends React.Component {
     return (
       <div className="App">
         <div
-          // className={'icon-left-open ' + (this.state.visible ? '' : 'opacity-0')}
           className={
             'icon-left-open ' +
             (this.state.visible ? '' : 'opacity-0 ') +
