@@ -37,7 +37,7 @@ class App extends React.Component {
     /* Check for cookie (shows whether logged in in the past day) */
     if (cookie.exists()) {
       title.animate()
-        .then(this.revealContent)
+        .then(this.revealContent.bind(this))
     } else {
       this.revealContent()
     }
