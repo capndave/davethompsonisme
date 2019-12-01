@@ -25,12 +25,15 @@ class App extends React.Component {
   }
 
   revealContent() {
-    /* Make Title Visible */
-    title.appear()
-
-    /* Make Content Visible */
     this.setState({
       fadeIn: true,
+      visible: true
+    })
+  }
+
+  makeContentVisible() {
+    title.appear()
+    this.setState({
       visible: true
     })
   }
@@ -38,10 +41,10 @@ class App extends React.Component {
   handleAppearance() {
     /* Check for cookie (shows whether logged in in the past day) */
     if (cookie.exists()) {
+      this.makeContentVisible()
+    } else {
       title.animate()
         .then(this.revealContent.bind(this))
-    } else {
-      this.revealContent()
     }
     /* Set/update cookie - shows site has been visited */
     cookie.set()
