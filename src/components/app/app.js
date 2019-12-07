@@ -18,12 +18,24 @@ class App extends React.Component {
     this.toggleActiveElementIndex = this.toggleActiveElementIndex.bind(this)
   }
 
+  /**
+   * Toggles the activeElementIndex property
+   * activeElementIndex is the index number that will be used on main section elements
+   * @private
+   * @method 
+   */
   toggleActiveElementIndex() {
     this.setState({
       activeElementIndex: +!this.state.activeElementIndex
     })
   }
-
+  
+  /**
+   * Set state properties fadeIn and visible to true
+   * fadeIn and visible properties effect class names applied to elements 
+   * @private
+   * @method
+   */
   revealContent() {
     this.setState({
       fadeIn: true,
@@ -31,6 +43,9 @@ class App extends React.Component {
     })
   }
 
+  /**
+   * Make the title and content appear
+   */
   makeContentVisible() {
     title.appear()
     this.setState({
@@ -38,16 +53,18 @@ class App extends React.Component {
     })
   }
 
+  /**
+   *  Check if cookie exists and update UI appropriately
+   *  Cookie shows whether logged in in the past day
+   */
   handleAppearance() {
-    /* Check for cookie (shows whether logged in in the past day) */
     if (cookie.exists()) {
       this.makeContentVisible()
     } else {
       title.animate()
         .then(this.revealContent.bind(this))
     }
-    /* Set/update cookie - shows site has been visited */
-    cookie.set()
+    cookie.set()      // Update cookie to show site was visited
   }
 
   componentDidMount() {
