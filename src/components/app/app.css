@@ -15,7 +15,7 @@ html, body, #root {
   margin: 0;
   padding: 0;
   font-family: Courier, 'Courier New', sans-serif;
-  font-size: calc(20px + 1vw);
+  font-size: calc(15px + 1vw);
 }
 
 /* Color Variables */

@@ -1,5 +1,4 @@
 /* animations */
-
 path {
     fill:none;
   }
@@ -64,3 +63,8 @@ path {
     stroke: black;
     stroke-width: 3px;
   }
+
+/* General */
+.titleImage {
+  margin-top: 1rem;
+}

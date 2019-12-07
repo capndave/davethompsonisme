@@ -3,7 +3,8 @@
   background-color: var(--color-dark);
   display: flex;
   flex-direction: column;
-  padding-top: 100%; /* to ensure content is centered and this element is square */font-size: .7rem;
+  padding-top: 100%; /* to ensure content is centered and this element is square */
+  font-size: 16px;
   position: relative;
   text-align: left;
 }
@@ -39,4 +40,10 @@
 
 .project .image {
   border-radius: 1rem;
+}
+
+@media only screen and (min-width:500px) {
+  .project {
+    font-size: .75rem;
+  }
 }
