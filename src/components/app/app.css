@@ -24,7 +24,8 @@ html, body, #root {
   --color-foreground: #197278; /* dark teal */
   /* --color-dark: #283d38; brackish */
   --color-dark: black;
-  --color-accent: indigo; /* indigo */
+  /* --color-accent: indigo; indigo */
+  --color-accent: #827a75;
   /* --color-accent: #c44536;  light orange */
   --color-dark-accent: #772e25; /* rust */
 }
@@ -36,6 +37,14 @@ html, body, #root {
   text-align: center;
   min-height: 100vh;
   padding-bottom: 1rem;
+}
+
+.App a {
+  color: black;
+}
+
+.App a:hover{
+  color: var(--color-accent);
 }
 
 /* Specific to outer app component */
