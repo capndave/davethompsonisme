@@ -8,8 +8,48 @@ import dataFiniti from '../../../assets/projects/datafiniti.png'
 import lilNonnas from '../../../assets/projects/lilnonnas.png'
 import mollywoodStudio from '../../../assets/projects/mollywoodstudio.png'
 import rareDarey from '../../../assets/projects/raredarey.png'
+import { stringLiteral } from "@babel/types"
 
 function Projects() {
+  /**
+   * Supercedes propagation of parent events
+   * Used to ensure that onClick event of the element this is applied to
+   * supercedes onClick event of >parent elements 
+   * @function
+   * @param {object} event 
+   */
+  function supercedeOtherOnclickHandlers(event) {
+    event.stopPropagation()
+  }
+
+  /**
+   * Adds double-forward slashes to url
+   * to ensure that url is treated as such rather than
+   * as a child to parent context url
+   * @function
+   * @param {string} url 
+   * @returns {string} url
+   */
+  function doubleEscapeURLString(url) {
+    const returnUrl = url.includes('//') ? url : `//${url}`
+    console.log(returnUrl)
+    return returnUrl
+  }
+
+  /**
+   * Returns an a element from a title string and url 
+   * @param {string} title 
+   * @param {string} url 
+   * @returns {jsx} a element
+   */
+  const titleAsLink = function (title, url) {
+    return <a
+      href={doubleEscapeURLString(url)}
+      target='_blank'
+      onClick={supercedeOtherOnclickHandlers}
+    >{title}</a>
+  }
+
   const data = [
     {
       name: 'TCAD ARB Apps',
@@ -19,7 +59,7 @@ function Projects() {
       link: null
     },
     {
-      name: 'Bluebonnet Records',
+      name: titleAsLink('Bluebonnet Records', 'bluebonnet-records.com'),
       builtWith: 'Webpack, HTML, CSS, and JavaScript.',
       description: 'Commercial website for Bluebonnet Records in Lockhart, TX',
       image: bluebonnetRecords,
