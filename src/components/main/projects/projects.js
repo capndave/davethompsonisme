@@ -48,48 +48,47 @@ function Projects() {
     >{title}</a>
   }
 
+  /**
+   * List of project data
+   * of apps and sites dave has made
+   * @object
+   */
   const data = [
     {
       name: 'TCAD ARB Apps',
       builtWith: 'Vue, Vuex, Node, Docker, SQL Server and Redis.',
       description: 'Suite of applications facilitating customer sign in and management, similar to what they use at the DMV.',
       image: taxpayerSignin,
-      link: null
     },
     {
       name: titleAsLink('Bluebonnet Records', 'bluebonnet-records.com'),
       builtWith: 'Webpack, HTML, CSS, and JavaScript.',
       description: 'Commercial website for Bluebonnet Records in Lockhart, TX',
       image: bluebonnetRecords,
-      link: 'bluebonnet-records.com'
     },
     {
-      name: 'Lil Nonna\'s',
+      name: titleAsLink('Lil Nonna\'s', 'lilnonnas.com'),
       builtWith: 'HTML, CSS, and JavaScript. Uses Google Sheets as a minimal CMS.',
       description: 'Commercial website for Lil Nonna\'s Pizza in Austin, TX',
       image: lilNonnas,
-      link: 'lilnonnas.com'
     },
     {
-      name: 'Mollywood Studio',
+      name: titleAsLink('Mollywood Studio', 'mollywoodstudio.com'),
       builtWith: 'HTML, CSS, and JavaScript.',
       description: 'Commercial website for Mollywood Studio photography in Los Angeles, CA',
       image: mollywoodStudio,
-      link: 'mollywoodstudio.com'
     },
     {
-      name: 'Rare Darey',
+      name: titleAsLink('Rare Darey', 'raredarey.com'),
       builtWith: 'React. Site in progress!',
       description: 'Commercial website for Rare Darey, dairy-free cheese maker',
       image: rareDarey,
-      link: 'raredarey.com'
     },
     {
-      name: 'Promise Neighborhoods',
+      name: titleAsLink('Promise Neighborhoods', 'davethompsonisme.com/promiseneighborhoods'),
       builtWith: 'HTML, CSS, Javascript, Leaflet, Waypoints, and QGIS.',
       description: 'Former profile for the U.S. Department of Education\'s Promise Neighborhoods Initiative',
       image: promiseNeighborhoods,
-      link: <a href='davethompsonisme.com/promiseneighborhoods'>link</a>
     }
   ]
   const projects = data.map(d => {

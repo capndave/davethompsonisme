@@ -6,7 +6,10 @@
 
 #projects a {
   color: white;
-  position: relative;
+}
+
+#projects a:hover {
+  color: var(--color-accent);
 }
 
 @media only screen and (min-width:500px) {
