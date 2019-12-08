@@ -31,9 +31,7 @@ function Projects() {
    * @returns {string} url
    */
   function doubleEscapeURLString(url) {
-    const returnUrl = url.includes('//') ? url : `//${url}`
-    console.log(returnUrl)
-    return returnUrl
+    return url.includes('//') ? url : `//${url}`
   }
 
   /**

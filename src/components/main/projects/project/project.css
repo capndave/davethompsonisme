@@ -42,10 +42,6 @@
   width: calc(100% - 1.4rem); 
 }
 
-.project .text h3 {
-  /* z-index: 8; */
-}
-
 .project .image {
   border-radius: 1rem;
 }
