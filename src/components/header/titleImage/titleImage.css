@@ -56,12 +56,12 @@ path {
     animation: draw .2s linear forwards;
     /* stroke: var(--accent-color-pink); */
     stroke: black;
-    stroke-width: 3px;
+    stroke-width: 2.5px;
   }
 
   .visible {
     stroke: black;
-    stroke-width: 3px;
+    stroke-width: 2.5px;
   }
 
 /* General */
