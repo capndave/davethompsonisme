@@ -79,16 +79,16 @@ function Projects() {
       image: mollywoodStudio,
     },
     {
-      name: titleAsLink('Rare Darey', 'raredarey.com'),
-      builtWith: 'React. Site in progress!',
-      description: 'Commercial website for Rare Darey, dairy-free cheese maker',
-      image: rareDarey,
-    },
-    {
       name: titleAsLink('Promise Neighborhoods', 'davethompsonisme.com/promiseneighborhoods'),
       builtWith: 'HTML, CSS, Javascript, Leaflet, Waypoints, and QGIS.',
       description: 'Former profile for the U.S. Department of Education\'s Promise Neighborhoods Initiative',
       image: promiseNeighborhoods,
+    },
+    {
+      name: titleAsLink('Rare Darey', 'raredarey.com'),
+      builtWith: 'React. Site in progress!',
+      description: 'Commercial website for Rare Darey, dairy-free cheese maker',
+      image: rareDarey,
     }
   ]
   const projects = data.map(d => {

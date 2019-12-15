@@ -9,8 +9,14 @@ class Project extends React.Component {
       isFlipped: false
     }
     this.handleClick = this.handleClick.bind(this)
+    this.handleHover = this.handleHover.bind(this)
   }
 
+  handleHover(e) {
+    e.preventDefault()
+    this.setState(prevState => ({ isFlipped: !prevState.isFlipped }))
+  }
+  
   handleClick(e) {
     e.preventDefault()
     this.setState(prevState => ({ isFlipped: !prevState.isFlipped }))
@@ -29,13 +35,23 @@ class Project extends React.Component {
         flipDirection='horizontal'
         cardZIndex='0'
       >
-        <div className='project front' key='front' onClick={this.handleClick}>
+        <div
+         className='project front'
+         key='front'
+         onClick={this.handleClick}
+         onMouseEnter={this.handleHover}
+        >
           <img
             className='image'
             src={this.props.data.image}>
           </img>
         </div>
-        <div className='project back' key='back' onClick={this.handleClick}>
+        <div
+         className='project back'
+         key='back'
+         onClick={this.handleClick}
+         onMouseLeave={this.handleHover}
+         >
           <div className='text'>
             <h3>{this.props.data.name}</h3>
             <p>{this.props.data.description}</p>
