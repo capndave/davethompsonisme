@@ -55,6 +55,12 @@ function Projects() {
    */
   const data = [
     {
+      name: titleAsLink('Lil Nonna\'s', 'lilnonnas.com'),
+      builtWith: 'HTML, CSS, and JavaScript. Uses Google Sheets as a minimal CMS.',
+      description: 'Commercial website for Lil Nonna\'s Pizza in Austin, TX',
+      image: lilNonnas,
+    },
+    {
       name: 'TCAD ARB Apps',
       builtWith: 'Vue, Vuex, Node, Docker, SQL Server and Redis.',
       description: 'Suite of applications facilitating customer sign in and management, similar to what they use at the DMV.',
@@ -65,12 +71,6 @@ function Projects() {
       builtWith: 'Webpack, HTML, CSS, and JavaScript.',
       description: 'Commercial website for Bluebonnet Records in Lockhart, TX',
       image: bluebonnetRecords,
-    },
-    {
-      name: titleAsLink('Lil Nonna\'s', 'lilnonnas.com'),
-      builtWith: 'HTML, CSS, and JavaScript. Uses Google Sheets as a minimal CMS.',
-      description: 'Commercial website for Lil Nonna\'s Pizza in Austin, TX',
-      image: lilNonnas,
     },
     {
       name: titleAsLink('Mollywood Studio', 'mollywoodstudio.com'),
