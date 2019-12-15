@@ -36,7 +36,6 @@ html, body, #root {
   flex-direction: row;
   text-align: center;
   min-height: 100vh;
-  padding-bottom: 1rem;
 }
 
 .App a {
