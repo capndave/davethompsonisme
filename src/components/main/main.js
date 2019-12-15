@@ -6,21 +6,27 @@ import '../../assets/icons/css/mfglabs.css'
 
 const Main = function (props) {
 
+  /**
+   * const {boolean} screenIsLessThan500px
+   */
+  const screenIsLessThan500px = window.innerWidth < 500
+
   const carouselElements = [
     {
-      name: 'About Me',
+      title: 'About Me',
       content: <AboutMe />
     },
     {
-      name: 'My Work',
-      content: <Projects />
+      title: 'My Work',
+      content: <Projects />,
+      info: screenIsLessThan500px ? 'Click each box for details' : null
     }
   ]
 
   let activeElement = carouselElements[props.activeElementIndex]
 
   return (
-    <section 
+    <section
       className={
         (props.visible ? '' : 'opacity-0 ') +
         (props.fadeIn ? 'fade-in' : '')
@@ -28,9 +34,12 @@ const Main = function (props) {
       id='main'
     >
       <article id='main-content'>
-        <h2 className='text-align-center width-100-percent'>
-          {activeElement.name}
-        </h2>
+        <div id="title-block">
+          <h2 className='text-align-center width-100-percent'>
+            {activeElement.title}
+          </h2>
+          {activeElement.info}
+        </div>
         {activeElement.content}
       </article>
     </section>
