@@ -4,7 +4,7 @@ import Project from './project/project'
 import bluebonnetRecords from '../../../assets/projects/bluebonnetrecords.png'
 import taxpayerSignin from '../../../assets/projects/arbq_signin.png'
 import promiseNeighborhoods from '../../../assets/projects/promise_neighborhoods.png'
-import dataFiniti from '../../../assets/projects/datafiniti.png'
+import redRiverHerbs from '../../../assets/projects/redriverherbs.jpg'
 import lilNonnas from '../../../assets/projects/lilnonnas.png'
 import mollywoodStudio from '../../../assets/projects/mollywoodstudio.png'
 import rareDarey from '../../../assets/projects/raredarey.png'
@@ -54,6 +54,12 @@ function Projects() {
    * @object
    */
   const data = [
+    {
+      name: titleAsLink('Red River Herbs', 'redriverherbs.com'),
+      builtWith: 'Gatsby and Contentful (JAM Stack)',
+      description: 'Commercial website for Red River Herbs',
+      image: redRiverHerbs,
+    },
     {
       name: titleAsLink('Lil Nonna\'s', 'lilnonnas.com'),
       builtWith: 'HTML, CSS, and JavaScript. Uses Google Sheets as a minimal CMS.',
