@@ -7,12 +7,11 @@ import promiseNeighborhoods from '../../../assets/projects/promise_neighborhoods
 import redRiverHerbs from '../../../assets/projects/redriverherbs.jpg'
 import lilNonnas from '../../../assets/projects/lilnonnas.png'
 import mollywoodStudio from '../../../assets/projects/mollywoodstudio.png'
-import rareDarey from '../../../assets/projects/raredarey.png'
-import { stringLiteral } from "@babel/types"
+// removed until site complete import rareDarey from '../../../assets/projects/raredarey.png'
 
 function Projects() {
   /**
-   * Supercedes propagation of parent events
+   * Supercedes propagation of pbreakingarent events
    * Used to ensure that onClick event of the element this is applied to
    * supercedes onClick event of >parent elements 
    * @function
@@ -43,6 +42,7 @@ function Projects() {
   const titleAsLink = function (title, url) {
     return <a
       href={doubleEscapeURLString(url)}
+      rel='noopener noreferrer'
       target='_blank'
       onClick={supercedeOtherOnclickHandlers}
     >{title}</a>
@@ -90,7 +90,7 @@ function Projects() {
       description: 'Former profile for the U.S. Department of Education\'s Promise Neighborhoods Initiative',
       image: promiseNeighborhoods,
     },
-    // {
+    // removing until site complete {
     //   name: titleAsLink('Rare Darey', 'raredarey.com'),
     //   builtWith: 'React. Site in progress!',
     //   description: 'Commercial website for Rare Darey, dairy-free cheese maker',
