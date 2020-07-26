@@ -42,6 +42,7 @@ class Project extends React.Component {
          onMouseEnter={this.handleHover}
         >
           <img
+            alt='project'
             className='image'
             src={this.props.data.image}>
           </img>

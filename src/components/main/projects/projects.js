@@ -73,9 +73,9 @@ function Projects() {
       image: taxpayerSignin,
     },
     {
-      name: titleAsLink('Bluebonnet Records', 'bluebonnet-records.com'),
+      name: 'Bluebonnet Records',
       builtWith: 'Webpack, HTML, CSS, and JavaScript.',
-      description: 'Commercial website for Bluebonnet Records in Lockhart, TX',
+      description: 'Prior website for Bluebonnet Records in Lockhart, TX',
       image: bluebonnetRecords,
     },
     {
@@ -90,12 +90,12 @@ function Projects() {
       description: 'Former profile for the U.S. Department of Education\'s Promise Neighborhoods Initiative',
       image: promiseNeighborhoods,
     },
-    {
-      name: titleAsLink('Rare Darey', 'raredarey.com'),
-      builtWith: 'React. Site in progress!',
-      description: 'Commercial website for Rare Darey, dairy-free cheese maker',
-      image: rareDarey,
-    }
+    // {
+    //   name: titleAsLink('Rare Darey', 'raredarey.com'),
+    //   builtWith: 'React. Site in progress!',
+    //   description: 'Commercial website for Rare Darey, dairy-free cheese maker',
+    //   image: rareDarey,
+    // }
   ]
   const projects = data.map(d => {
     return (

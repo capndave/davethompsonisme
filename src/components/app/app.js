@@ -1,5 +1,4 @@
 import React from 'react';
-import classnames from 'classnames'
 import Header from '../header/header'
 import Main from '../main/main'
 import './app.css'
