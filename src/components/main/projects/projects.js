@@ -90,12 +90,6 @@ function Projects() {
       description: 'Former profile for the U.S. Department of Education\'s Promise Neighborhoods Initiative',
       image: promiseNeighborhoods,
     },
-    // removing until site complete {
-    //   name: titleAsLink('Rare Darey', 'raredarey.com'),
-    //   builtWith: 'React. Site in progress!',
-    //   description: 'Commercial website for Rare Darey, dairy-free cheese maker',
-    //   image: rareDarey,
-    // }
   ]
   const projects = data.map(d => {
     return (
