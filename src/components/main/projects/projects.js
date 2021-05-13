@@ -7,6 +7,7 @@ import promiseNeighborhoods from '../../../assets/projects/promise_neighborhoods
 import redRiverHerbs from '../../../assets/projects/redriverherbs.jpg'
 import lilNonnas from '../../../assets/projects/lilnonnas.png'
 import mollywoodStudio from '../../../assets/projects/mollywoodstudio.png'
+import backendAtTravelers from '../../../assets/projects/backend_at_travelers.svg'
 // removed until site complete import rareDarey from '../../../assets/projects/raredarey.png'
 
 function Projects() {
@@ -67,22 +68,28 @@ function Projects() {
       image: lilNonnas,
     },
     {
-      name: 'TCAD ARB Apps',
-      builtWith: 'Vue, Vuex, Node, Docker, SQL Server and Redis.',
-      description: 'Suite of applications facilitating customer sign in and management, similar to what they use at the DMV.',
-      image: taxpayerSignin,
+      name: 'Backend at Travelers',
+      builtWith: 'Node, .NET, Groovy, MongoDB, Hashicorp Vault',
+      description: 'Backend of Travelers Claim Management, moving monoliths to microservices',
+      image: backendAtTravelers,
     },
     {
-      name: 'Bluebonnet Records',
-      builtWith: 'Webpack, HTML, CSS, and JavaScript.',
-      description: 'Prior website for Bluebonnet Records in Lockhart, TX',
-      image: bluebonnetRecords,
+      name: 'TCAD ARB Apps',
+      builtWith: 'Vue, Vuex, Node, Docker, SQL Server and Redis.',
+      description: 'Suite of applications facilitating customer sign in & management, like the queue at the DMV.',
+      image: taxpayerSignin,
     },
     {
       name: titleAsLink('Mollywood Studio', 'mollywoodstudio.com'),
       builtWith: 'HTML, CSS, and JavaScript.',
       description: 'Commercial website for Mollywood Studio photography in Los Angeles, CA',
       image: mollywoodStudio,
+    },
+    {
+      name: 'Bluebonnet Records',
+      builtWith: 'Webpack, HTML, CSS, and JavaScript.',
+      description: 'Deprecated website for Bluebonnet Records in Lockhart, TX',
+      image: bluebonnetRecords,
     },
     {
       name: titleAsLink('Promise Neighborhoods', 'davethompsonisme.com/promiseneighborhoods'),
