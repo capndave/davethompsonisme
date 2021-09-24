@@ -26,27 +26,27 @@ export function Navbar(props) {
         className="icon"
         href="https://github.com/capndave"
       >
-		  <FontAwesomeIcon
-		    icon={faGithub}
-		    size="1x"
-			 />
-	  </a>
+        <FontAwesomeIcon
+          icon={faGithub}
+          size="1x"
+        />
+      </a>
       <a
         aria-label="icon-linkedin"
         alt="linkedin"
         className="icon icon-linkedin"
         href="https://www.linkedin.com/in/davethompsonisme/"
       >
-		  <FontAwesomeIcon icon={faLinkedin} size="1x" />
-	  </a>
+        <FontAwesomeIcon icon={faLinkedin} size="1x" />
+      </a>
       <a
         aria-label="icon-twitter"
         alt="twitter"
         className="icon icon-twitter"
         href="https://twitter.com/capndavet"
       >
-		  <FontAwesomeIcon icon={faTwitter} size="1x" />
-	  </a>
+        <FontAwesomeIcon icon={faTwitter} size="1x" />
+      </a>
     </nav>
   )
 }
