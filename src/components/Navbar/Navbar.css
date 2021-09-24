@@ -1,0 +1,17 @@
+nav {
+  margin-top: 1rem;
+}
+
+nav [class^="icon"] {
+  font-size: 1.5rem;
+  color: pink;
+}
+
+nav a {
+  color: inherit;
+  text-decoration: none;
+}
+
+nav .icon:hover {
+  color: var(--color-accent);
+}

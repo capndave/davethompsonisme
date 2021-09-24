@@ -1,0 +1,15 @@
+#about {
+    text-align: left;
+}
+
+p {
+    margin: 1rem 0 0 0;
+}
+
+#about-me p:first-of-type {
+  margin: 0;
+}
+
+.icon-right-open, .icon-left-open {
+    align-self: center;
+}

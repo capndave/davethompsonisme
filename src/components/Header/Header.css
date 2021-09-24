@@ -1,0 +1,8 @@
+#header {
+  /* background-color: var(--color-accent); */
+  padding: 1rem;              
+  width: calc(100vw - 2rem - 8px);  /* expand size, account for padding */
+  position: relative;         /* keep relative but expand */
+  left: 50%;                  /* push start pos to middle */
+  margin-left: -50vw;         /* pull back to left of viewport */
+}
