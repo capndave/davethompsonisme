@@ -1,0 +1,115 @@
+import React from 'react'
+import './projects.css'
+import Project from './Project/Project'
+
+import bluebonnetRecords from '../assets/images/bluebonnetrecords.png'
+import taxpayerSignin from '../assets/images/arbq_signin.png'
+import promiseNeighborhoods from '../assets/images/promise_neighborhoods.png'
+import redRiverHerbs from '../assets/images/redriverherbs.jpg'
+import lilNonnas from '../assets/images/lilnonnas.png'
+import mollywoodStudio from '../assets/images/mollywoodstudio.png'
+import backendAtTravelers from '../assets/images/backend_at_travelers.svg'
+
+function Projects () {
+  /**
+	 * Supercedes propagation of pbreakingarent events
+	 * Used to ensure that onClick event of the element this is applied to
+	 * supercedes onClick event of >parent elements
+	 * @function
+	 * @param {object} event
+	 */
+  function supercedeOtherOnclickHandlers (event) {
+    event.stopPropagation()
+  }
+
+  /**
+	 * Adds double-forward slashes to url
+	 * to ensure that url is treated as such rather than
+	 * as a child to parent context url
+	 * @function
+	 * @param {string} url
+	 * @returns {string} url
+	 */
+  function doubleEscapeURLString (url) {
+    return url.includes('//') ? url : `//${url}`
+  }
+
+  /**
+	 * Returns an a element from a title string and url
+	 * @param {string} title
+	 * @param {string} url
+	 * @returns {jsx} a element
+	 */
+  const titleAsLink = function (title, url) {
+    return <a
+			href={doubleEscapeURLString(url)}
+			rel='noopener noreferrer'
+			target='_blank'
+			onClick={supercedeOtherOnclickHandlers}
+		>{title}</a>
+  }
+
+  /**
+	 * List of project data
+	 * of apps and sites dave has made
+	 * @object
+	 */
+  const data = [
+    {
+      name: titleAsLink('Red River Herbs', 'redriverherbs.com'),
+      builtWith: 'Gatsby and Contentful (JAM Stack)',
+      description: 'Commercial website for Red River Herbs',
+      image: redRiverHerbs
+    },
+    {
+      name: titleAsLink('Lil Nonna\'s', 'lilnonnas.com'),
+      builtWith: 'HTML, CSS, and JavaScript. Uses Google Sheets as a minimal CMS.',
+      description: 'Commercial website for Lil Nonna\'s Pizza in Austin, TX',
+      image: lilNonnas
+    },
+    {
+      name: 'Engineering at Travelers',
+      builtWith: 'Node, .NET, React, Groovy, MongoDB, Hashicorp Vault',
+      description: 'Engineering at Travelers Claim Management, moving monoliths to microservices',
+      image: backendAtTravelers
+    },
+    {
+      name: 'TCAD ARB Apps',
+      builtWith: 'Vue, Vuex, Node, Docker, SQL Server and Redis.',
+      description: 'Suite of applications facilitating customer sign in & management, like the queue at the DMV.',
+      image: taxpayerSignin
+    },
+    {
+      name: titleAsLink('Mollywood Studio', 'mollywoodstudio.com'),
+      builtWith: 'HTML, CSS, and JavaScript.',
+      description: 'Commercial website for Mollywood Studio photography in Los Angeles, CA',
+      image: mollywoodStudio
+    },
+    {
+      name: 'Bluebonnet Records',
+      builtWith: 'Webpack, HTML, CSS, and JavaScript.',
+      description: 'Deprecated website for Bluebonnet Records in Lockhart, TX',
+      image: bluebonnetRecords
+    },
+    {
+      name: titleAsLink('Promise Neighborhoods', 'davethompsonisme.com/promiseneighborhoods'),
+      builtWith: 'HTML, CSS, Javascript, Leaflet, Waypoints, and QGIS.',
+      description: 'Former profile for the U.S. Department of Education\'s Promise Neighborhoods Initiative',
+      image: promiseNeighborhoods
+    }
+  ]
+
+  const projects = data.map((d, i) => {
+    return (
+			<Project data={d} key={i} />
+    )
+  })
+
+  return (
+		<article id='projects'>
+			{projects}
+		</article>
+  )
+}
+
+export default Projects

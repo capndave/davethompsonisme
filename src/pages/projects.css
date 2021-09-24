@@ -1,0 +1,19 @@
+#projects {
+  display: grid;
+	gap: .5rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+#projects a {
+  color: white;
+}
+
+#projects a:hover {
+  color: var(--color-accent);
+}
+
+@media only screen and (min-width:500px) {
+  #projects {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
