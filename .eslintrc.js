@@ -18,5 +18,13 @@ module.exports = {
     'react'
   ],
   rules: {
+    'react/prop-types': 'off',
+    'no-tabs': 'off',
+    'react/no-unescaped-entities': 'off'
+  },
+  settings: {
+    react: {
+      version: 'detect'
+    }
   }
 }

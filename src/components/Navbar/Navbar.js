@@ -1,4 +1,4 @@
-import React from "react"
+import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './Navbar.css'
 import {
@@ -7,7 +7,7 @@ import {
   faTwitter
 } from '@fortawesome/free-brands-svg-icons'
 
-export function Navbar(props) {
+export function Navbar (props) {
   return (
     <nav
       className={`display-flex justify-content-space-around width-100pct 
@@ -50,4 +50,3 @@ export function Navbar(props) {
     </nav>
   )
 }
-
