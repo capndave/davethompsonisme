@@ -1,0 +1,95 @@
+/* Courier Font */
+@font-face {
+  font-family: 'Courier';
+  src: url('../assets/fonts/courier_3.eot') format('embedded-opentype'),
+       url('../assets/fonts/courier_3.woff2') format('woff2'),
+       url('../assets/fonts/courier_3.woff') format('woff'),
+       url('../assets/fonts/courier_3.ttf') format('truetype'),
+       url('../assets/fonts/courier_3.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Set Project Defaults */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  font-family: Courier, 'Courier New', sans-serif;
+  font-size: calc(14px + 1vw);
+}
+
+/* Color Variables */
+:root {
+  --color-background: #edddd4;
+  --color-foreground: #197278; /* dark teal */
+  --color-dark: black;
+  --color-accent: #827a75;
+  --color-dark-accent: #772e25; /* rust */
+}
+
+#app {
+  background-color: var(--color-background);
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  min-height: 100vh;
+}
+
+/* Specific to outer app component */
+.icon-right-open, .icon-left-open {
+  align-self: baseline; /* place on top of pg */
+  position: fixed;   /* so that it won't enlarge parent el */
+  top: calc(50vh - 2rem);
+  font-size: 2rem;
+}
+
+.icon-right-open {
+  right: 0;
+}
+
+.icon-right-open:hover, .icon-left-open:hover {
+  color: var(--color-accent);
+}
+
+#content {
+  /* flex-grow: 1; */
+  flex: initial;
+  width: calc(100% - 5rem);
+  margin-left: 2.5rem;
+}
+
+
+/* General Use Shared Classes */
+
+.display-flex {
+  display: flex;
+}
+
+.justify-content-space-around {
+  justify-content: space-around;
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.width-100pct {
+  width: 100%;
+}
+ 
+/********
+* fade-in class will change with animations (for all content except title
+********/
+
+.fade-in {
+  animation: fade-in 5s;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
