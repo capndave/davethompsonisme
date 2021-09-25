@@ -51,20 +51,23 @@ path {
        text-decoration: underline;
        color: var(--accent-color-pink);}
   }
-  
-  .animated {
-    animation: draw .2s linear forwards;
-    /* stroke: var(--accent-color-pink); */
-    stroke: black;
-    stroke-width: 2.5px;
-  }
 
-  .visible {
-    stroke: black;
-    stroke-width: 2.5px;
-  }
+.animated {
+	animation: draw .2s linear forwards;
+	/* stroke: var(--accent-color-pink); */
+	stroke: black;
+	stroke-width: 2.5px;
+}
+
+.visible {
+	stroke: black;
+	stroke-width: 2.5px;
+}
 
 /* General */
 .titleImage {
   margin-top: 1rem;
+	background-color: pink;
+	stroke: black;
+    stroke-width: 2.5px;
 }

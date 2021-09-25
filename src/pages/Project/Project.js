@@ -24,9 +24,7 @@ export default class Project extends React.Component {
 
   render () {
     const link =
-			this.props.data.link
-			  ? <a href={this.props.data.link}>{this.props.data.link}</a>
-			  : null
+			this.props.data.link ? <a href={this.props.data.link}>{this.props.data.link}</a> : null
 
     return (
 			<ReactCardFlip

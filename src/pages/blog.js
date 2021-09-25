@@ -9,4 +9,4 @@ function Blog () {
   )
 }
 
-export default AboutMe
+export default Blog

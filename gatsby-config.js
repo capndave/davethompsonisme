@@ -28,6 +28,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-prettier-eslint',
       options: {
+        watch: true,
         prettier: {
           patterns: [
             // the pattern "**/*.{js,jsx,ts,tsx}" is not used because we will rely on `eslint --fix`
@@ -45,6 +46,14 @@ module.exports = {
             fix: true,
             cache: true
           }
+        }
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /titles/
         }
       }
     }
