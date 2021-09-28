@@ -1,63 +1,74 @@
 /* animations */
 path {
     fill:none;
-  }
+		stroke: black;
+		stroke-dasharray: 1000;
+		stroke-dashoffset: 1000;
+	  /* animation: draw .2s linear forwards; */
+	  animation: draw 4s linear forwards;
+}
   
-  @keyframes draw {
-   to {
-   stroke-dashoffset:0;
-   }
-  }
-  
-  @-webkit-keyframes fadeIn {
-     0% {opacity: 0;}
-     100% {opacity: 1;}
-  }
-  
-  @keyframes fadeIn {
-     0% {opacity: 0;}
-     100% {opacity: 1;}
-  }
-  
-  @-webkit-keyframes appear {
-     0% {
-       opacity: 0;
-     }
-     100% {
-       opacity: 1;
-     }
-  }
-  
-  @keyframes appear {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  
-  @-webkit-keyframes colorFade {
-     0% {color: #ffffff;}
-     50% {color: var(--accent-color-cream);}
-     100% {
-       text-decoration: underline;
-       color: var(--accent-color-pink);}
-  }
-  @keyframes colorFade {
-     0% {color: #ffffff;}
-     50% {color: var(--accent-color-cream);}
-     100% {
-       text-decoration: underline;
-       color: var(--accent-color-pink);}
-  }
+@keyframes draw {
+	to {
+	  /* stroke-dashoffset:0; */
+	  stroke-dashoffset: 0;
+	}
+}
 
-.animated {
+@-webkit-keyframes fadeIn {
+		0% {opacity: 0;}
+		100% {opacity: 1;}
+}
+
+@keyframes fadeIn {
+		0% {opacity: 0;}
+		100% {opacity: 1;}
+}
+
+@-webkit-keyframes appear {
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+}
+
+@keyframes appear {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+/* @-webkit-keyframes colorFade {
+		0% {color: #ffffff;}
+		50% {color: var(--accent-color-cream);}
+		100% {
+			text-decoration: underline;
+			color: var(--accent-color-pink);}
+}
+@keyframes colorFade {
+		0% {color: #ffffff;}
+		50% {color: var(--accent-color-cream);}
+		100% {
+			text-decoration: underline;
+			color: var(--accent-color-pink);}
+} */
+
+/* .animated {
 	animation: draw .2s linear forwards;
-	/* stroke: var(--accent-color-pink); */
 	stroke: black;
 	stroke-width: 2.5px;
-}
+} */
+
+/* .animated #mobile-title{
+	animation: draw .2s linear forwards;
+	stroke: black;
+	stroke-width: 2.5px;
+} */
 
 .visible {
 	stroke: black;
@@ -67,7 +78,4 @@ path {
 /* General */
 .titleImage {
   margin-top: 1rem;
-	background-color: pink;
-	stroke: black;
-    stroke-width: 2.5px;
 }
