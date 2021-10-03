@@ -14,39 +14,10 @@ export function Navbar (props) {
         ${props.visible ? 'visible' : 'opacity-0 '}
         ${props.fadeIn ? 'fade-in' : ''}
       `}>
-			{/* <a
-        aria-label="icon-email"
-        alt="email"
-        className="icon icon-mail"
-        href="mailto:david.w.thompson@utexas.edu"
-      >&nbsp;</a> */}
-			<a
-				aria-label="icon-github"
-				alt="github"
-				className="icon"
-				href="https://github.com/capndave"
-			>
-				<FontAwesomeIcon
-					icon={faGithub}
-					size="1x"
-				/>
-			</a>
-			<a
-				aria-label="icon-linkedin"
-				alt="linkedin"
-				className="icon icon-linkedin"
-				href="https://www.linkedin.com/in/davethompsonisme/"
-			>
-				<FontAwesomeIcon icon={faLinkedin} size="1x" />
-			</a>
-			<a
-				aria-label="icon-twitter"
-				alt="twitter"
-				className="icon icon-twitter"
-				href="https://twitter.com/capndavet"
-			>
-				<FontAwesomeIcon icon={faTwitter} size="1x" />
-			</a>
+			<a href="#about" >about</a>
+			<a href="#blog" >blog</a>
+			<a href="#contact" >contact</a>
+			<a href="#projects" >projects</a>
 		</nav>
   )
 }
