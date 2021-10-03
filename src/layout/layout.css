@@ -29,35 +29,9 @@ html, body, #root {
 
 #app {
   background-color: var(--color-background);
-  display: flex;
-  flex-direction: row;
   text-align: center;
-  min-height: 100vh;
+  min-height: calc(100vh - 2rem);
 }
-
-/* Specific to outer app component */
-.icon-right-open, .icon-left-open {
-  align-self: baseline; /* place on top of pg */
-  position: fixed;   /* so that it won't enlarge parent el */
-  top: calc(50vh - 2rem);
-  font-size: 2rem;
-}
-
-.icon-right-open {
-  right: 0;
-}
-
-.icon-right-open:hover, .icon-left-open:hover {
-  color: var(--color-accent);
-}
-
-#content {
-  /* flex-grow: 1; */
-  flex: initial;
-  width: calc(100% - 5rem);
-  margin-left: 2.5rem;
-}
-
 
 /* General Use Shared Classes */
 
@@ -71,6 +45,10 @@ html, body, #root {
 
 .opacity-0 {
   opacity: 0;
+}
+
+.padding-1-rem {
+	padding: 1rem;
 }
 
 .width-100pct {

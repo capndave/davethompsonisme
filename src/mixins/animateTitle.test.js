@@ -1,8 +1,7 @@
 /* eslint-env jest */
-
 import React from 'react'
 import ReactDOM from 'react-dom'
-import applyStyle from './applyStyle'
+import animateTitle from './animateTitle'
 
 // describe('animateGroup', () => {
 

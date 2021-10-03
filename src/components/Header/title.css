@@ -1,11 +1,11 @@
 /* animations */
 path {
-    fill:none;
-		stroke: black;
+    /* fill:none; */
+		/* stroke: black;
 		stroke-dasharray: 1000;
 		stroke-dashoffset: 1000;
 	  /* animation: draw .2s linear forwards; */
-	  animation: draw 4s linear forwards;
+	  /* animation: draw 4s linear forwards; */
 }
   
 @keyframes draw {
@@ -58,11 +58,11 @@ path {
 			color: var(--accent-color-pink);}
 } */
 
-/* .animated {
+.animated {
 	animation: draw .2s linear forwards;
 	stroke: black;
 	stroke-width: 2.5px;
-} */
+}
 
 /* .animated #mobile-title{
 	animation: draw .2s linear forwards;
@@ -71,7 +71,7 @@ path {
 } */
 
 .visible {
-	stroke: black;
+	stroke: var(--color-background);
 	stroke-width: 2.5px;
 }
 
