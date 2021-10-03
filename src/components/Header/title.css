@@ -71,11 +71,12 @@ path {
 } */
 
 .visible {
-	stroke: var(--color-background);
+	stroke: var(--color-dark);
 	stroke-width: 2.5px;
 }
 
 /* General */
 .titleImage {
-  margin-top: 1rem;
+  padding: 1rem .5rem .66rem .5rem;
+	width: calc(100vw - 1rem);
 }
