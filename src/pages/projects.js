@@ -59,43 +59,50 @@ function Projects () {
       name: titleAsLink('Red River Herbs', 'redriverherbs.com'),
       builtWith: 'Gatsby and Contentful (JAM Stack)',
       description: 'Commercial website for Red River Herbs',
-      image: redRiverHerbs
+      image: redRiverHerbs,
+      technologies: ['Gatsby', 'React', 'Contentful']
     },
     {
       name: titleAsLink('Lil Nonna\'s', 'lilnonnas.com'),
       builtWith: 'HTML, CSS, and JavaScript. Uses Google Sheets as a minimal CMS.',
       description: 'Commercial website for Lil Nonna\'s Pizza in Austin, TX',
-      image: lilNonnas
+      image: lilNonnas,
+      technologies: ['HTML5', 'CSS', 'JavaScript', 'Google Sheets']
     },
     {
       name: 'Engineering at Travelers',
       builtWith: 'Node, .NET, React, Groovy, MongoDB, Hashicorp Vault',
       description: 'Engineering at Travelers Claim Management, moving monoliths to microservices',
-      image: backendAtTravelers
+      image: backendAtTravelers,
+      technologies: ['Node', '.NET', 'React', 'AWS', 'MongoDB', 'Hashicorp Vault']
     },
     {
       name: 'TCAD ARB Apps',
       builtWith: 'Vue, Vuex, Node, Docker, SQL Server and Redis.',
       description: 'Suite of applications facilitating customer sign in & management, like the queue at the DMV.',
-      image: taxpayerSignin
+      image: taxpayerSignin,
+      technologies: ['Vue', 'Node', 'Docker', 'SQL Server', 'Redis']
     },
     {
       name: titleAsLink('Mollywood Studio', 'mollywoodstudio.com'),
       builtWith: 'HTML, CSS, and JavaScript.',
       description: 'Commercial website for Mollywood Studio photography in Los Angeles, CA',
-      image: mollywoodStudio
+      image: mollywoodStudio,
+      technologies: ['HTML5', 'CSS', 'JavaScript']
     },
     {
       name: 'Bluebonnet Records',
       builtWith: 'Webpack, HTML, CSS, and JavaScript.',
       description: 'Deprecated website for Bluebonnet Records in Lockhart, TX',
-      image: bluebonnetRecords
+      image: bluebonnetRecords,
+      technologies: ['HTML5', 'CSS', 'JavaScript', 'WebPack']
     },
     {
       name: titleAsLink('Promise Neighborhoods', 'davethompsonisme.com/promiseneighborhoods'),
       builtWith: 'HTML, CSS, Javascript, Leaflet, Waypoints, and QGIS.',
       description: 'Former profile for the U.S. Department of Education\'s Promise Neighborhoods Initiative',
-      image: promiseNeighborhoods
+      image: promiseNeighborhoods,
+      technologies: ['HTML5', 'CSS', 'JavaScript', 'Leaflet', 'GIS']
     }
   ]
 

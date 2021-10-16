@@ -1,0 +1,22 @@
+.project {
+	position: relative;
+}
+
+.project img {
+    width:100%;
+    vertical-align:top;
+}
+
+#project-detail {
+	position: absolute;
+	top: 0;
+	height: 0;
+	width: 100%;
+	background-color: black;
+	opacity: .85;
+	transition: height 1s;
+}
+
+.hovered > #project-detail {
+	height: 100%;
+}
