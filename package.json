@@ -11,7 +11,8 @@
 		"start": "gatsby develop",
 		"build": "gatsby build",
 		"serve": "gatsby serve",
-		"clean": "gatsby clean"
+		"clean": "gatsby clean",
+		"test": "jest"
 	},
 	"dependencies": {
 		"@fortawesome/fontawesome-svg-core": "^1.2.36",
@@ -39,11 +40,16 @@
 		"styled-components": "^5.3.1"
 	},
 	"devDependencies": {
+		"babel-jest": "^27.3.1",
+		"babel-preset-gatsby": "^2.0.0",
 		"eslint": "^7.32.0",
 		"eslint-config-standard": "^16.0.3",
 		"eslint-plugin-import": "^2.24.2",
 		"eslint-plugin-node": "^11.1.0",
 		"eslint-plugin-promise": "^5.1.0",
-		"eslint-plugin-react": "^7.26.0"
+		"eslint-plugin-react": "^7.26.0",
+		"identity-obj-proxy": "^3.0.0",
+		"jest": "^27.3.1",
+		"react-test-renderer": "^17.0.2"
 	}
 }
