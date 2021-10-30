@@ -33,6 +33,14 @@ html, body, #root {
   min-height: 100vh;
 }
 
+#page a {
+	color: var(--color-foreground);
+}
+
+#page a:hover {
+	opacity: .6;
+}
+
 #page {
 	margin: 1rem;
 }
