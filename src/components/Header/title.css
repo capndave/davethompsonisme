@@ -77,6 +77,6 @@ path {
 
 /* General */
 .titleImage {
-  padding: 1rem .5rem .66rem .5rem;
-	width: calc(100vw - 1rem);
+	margin-top: 1rem;
+	width: calc(100vw - 2rem);
 }
