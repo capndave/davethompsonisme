@@ -1,32 +1,37 @@
 import React, { useState } from 'react'
 import './Project.css'
 
-function Project (props) {
-  const [isHovered, setIsHovered] = useState(false)
-  const [isClicked, setIsClicked] = useState(false)
+function Project(props) {
+	const [isHovered, setIsHovered] = useState(false)
+	const [isClicked, setIsClicked] = useState(false)
 
-  return (
+	const detail = <div className='detail'>
+		<div className='inner'>
+			<h3>{props.data.name}</h3>
+			<p>{props.data.description}</p>
+			<p>Built with {props.data.builtWith}</p>
+		</div>
+	</div>
+
+	const image = <img
+		alt='project image'
+		className='image'
+		src={props.data.image}
+		onClick={() => setIsClicked(!isClicked)}
+	/>
+
+	const shownContent = isHovered ? detail : image
+
+	return (
 		<section
-			className={`project ${isHovered ? 'hovered' : null}`} // id conditional on hover
+			// className={`project ${isHovered ? 'hovered' : null}`} // id conditional on hover
+			className='project'// id conditional on hover
 			onMouseEnter={() => setIsHovered(true)}
 			onMouseLeave={() => setIsHovered(false)}
 		>
-			<img
-				alt='project image'
-				className='image'
-				src={props.data.image}
-				onClick={() => setIsClicked(!isClicked)}
-			>
-			</img>
-			<div
-				id='project-detail'
-			>
-				lorem ipsum <br>
-				</br>hi hi
-				hi
-			</div>
-		</section>
-  )
+			{shownContent}
+		</section >
+	)
 }
 
 export default Project

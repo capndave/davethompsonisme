@@ -1,22 +1,28 @@
 .project {
 	position: relative;
+	overflow: hidden;
 }
 
-.project img {
+.project .image {
     width:100%;
-    vertical-align:top;
+    /* vertical-align:top; */
 }
 
-#project-detail {
-	position: absolute;
-	top: 0;
-	height: 0;
+.detail {
+	color: white;
+	background-color: var(--color-dark);
+	height: calc(100% - 6px); /* parent is a bit taller than images, subtract 6px to match */
+	font-size: 20px;
 	width: 100%;
-	background-color: black;
-	opacity: .85;
-	transition: height 1s;
+	margin: 0;
 }
 
-.hovered > #project-detail {
-	height: 100%;
+.detail .inner {
+	padding: 20px;
+}
+
+/* h3 was pushing detail div down, correct for that */
+.detail h3 {
+	margin-top: 0;
+	/* padding-top: 1rem; */
 }
