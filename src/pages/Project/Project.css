@@ -2,6 +2,10 @@
 	position: relative;
 }
 
+.project > * {
+	border-radius: 10px;
+}
+
 .project .image {
     width:100%;
     /* vertical-align:top; */
@@ -23,5 +27,4 @@
 /* h3 was pushing detail div down, correct for that */
 .detail h3 {
 	margin-top: 0;
-	/* padding-top: 1rem; */
 }
