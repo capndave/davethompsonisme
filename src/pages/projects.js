@@ -8,7 +8,6 @@ import promiseNeighborhoods from '../assets/images/promise_neighborhoods.png'
 import redRiverHerbs from '../assets/images/redriverherbs.jpg'
 import lilNonnas from '../assets/images/lilnonnas.png'
 import mollywoodStudio from '../assets/images/mollywoodstudio.png'
-import backendAtTravelers from '../assets/images/backend_at_travelers.svg'
 
 function Projects () {
   /**
@@ -68,13 +67,6 @@ function Projects () {
       description: 'Commercial website for Lil Nonna\'s Pizza in Austin, TX',
       image: lilNonnas,
       technologies: ['HTML5', 'CSS', 'JavaScript', 'Google Sheets']
-    },
-    {
-      name: 'Engineering at Travelers',
-      builtWith: 'Node, .NET, React, Groovy, MongoDB, Hashicorp Vault',
-      description: 'Engineering at Travelers',
-      image: backendAtTravelers,
-      technologies: ['Node', '.NET', 'React', 'AWS', 'MongoDB', 'Hashicorp Vault']
     },
     {
       name: 'TCAD ARB Apps',

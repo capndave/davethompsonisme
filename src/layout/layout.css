@@ -64,6 +64,10 @@ html, body, #root {
 	padding: 1rem;
 }
 
+.text-align-left {
+	text-align: left;
+}
+
 .width-100pct {
   width: 100%;
 }

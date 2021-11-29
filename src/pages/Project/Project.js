@@ -1,28 +1,28 @@
 import React, { useState } from 'react'
 import './Project.css'
 
-function Project(props) {
-	const [isHovered, setIsHovered] = useState(false)
-	const [isClicked, setIsClicked] = useState(false)
+function Project (props) {
+  const [isHovered, setIsHovered] = useState(false)
+  const [isClicked, setIsClicked] = useState(false)
 
-	const detail = <div className='detail'>
+  const detail = <div className='detail'>
 		<div className='inner'>
 			<h3>{props.data.name}</h3>
-			<p>{props.data.description}</p>
-			<p>Built with {props.data.builtWith}</p>
+			<p className='text-align-left'>{props.data.description}</p>
+			<p className='text-align-left'>Built with {props.data.builtWith}</p>
 		</div>
 	</div>
 
-	const image = <img
+  const image = <img
 		alt='project image'
 		className='image'
 		src={props.data.image}
 		onClick={() => setIsClicked(!isClicked)}
 	/>
 
-	const shownContent = isHovered ? detail : image
+  const shownContent = isHovered ? detail : image
 
-	return (
+  return (
 		<section
 			// className={`project ${isHovered ? 'hovered' : null}`} // id conditional on hover
 			className='project'
@@ -31,7 +31,7 @@ function Project(props) {
 		>
 			{shownContent}
 		</section >
-	)
+  )
 }
 
 export default Project
