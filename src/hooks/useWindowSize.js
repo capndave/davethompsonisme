@@ -12,8 +12,8 @@ function useWindowSize () {
   useEffect(() => {
     if (window) {
       setWindowSize({
-        windowHeight: window.innerHeight,
-        windowWidth: window.innerWidth
+        innerHeight: window.innerHeight,
+        innerWidth: window.innerWidth
       })
     }
     /*
@@ -23,8 +23,8 @@ function useWindowSize () {
 		*/
     const debouncedHandleResize = debounce(function handleResize () {
       setWindowSize({
-        windowHeight: window.innerHeight,
-        windowWidth: window.innerWidth
+        innerHeight: window.innerHeight,
+        innerWidth: window.innerWidth
       })
     }, 500)
 
