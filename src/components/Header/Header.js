@@ -11,7 +11,7 @@ const Header = (props) => {
   const { windowSize } = useWindowSize()
 
   /* Get title based on width of viewport */
-  const titleToUse = windowSize.windowWidth > 550
+  const titleToUse = windowSize.innerWidth > 550
     ? <DesktopTitle className={'titleImage visible'} />
     : <MobileTitle className={'titleImage visible'} />
 
