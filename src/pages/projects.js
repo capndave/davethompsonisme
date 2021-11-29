@@ -72,7 +72,7 @@ function Projects () {
     {
       name: 'Engineering at Travelers',
       builtWith: 'Node, .NET, React, Groovy, MongoDB, Hashicorp Vault',
-      description: 'Engineering at Travelers Claim Management, moving monoliths to microservices',
+      description: 'Engineering at Travelers',
       image: backendAtTravelers,
       technologies: ['Node', '.NET', 'React', 'AWS', 'MongoDB', 'Hashicorp Vault']
     },
