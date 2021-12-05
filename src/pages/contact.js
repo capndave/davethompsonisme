@@ -1,11 +1,12 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons'
+import ContactForm from '../components/ContactForm/ContactForm'
 
-export default function Contact () {
-  return (
+export default function Contact() {
+	return (
 		<article id='contact'>
-			<p>Contact form</p>
+			<ContactForm />
 			<p>Socials
 				<a
 					aria-label="icon-github"
@@ -37,5 +38,5 @@ export default function Contact () {
 
 			</p>
 		</article>
-  )
+	)
 }
