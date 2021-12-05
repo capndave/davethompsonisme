@@ -1,6 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import ContactForm from '../components/ContactForm/ContactForm'
 
 export default function Contact() {
@@ -8,6 +9,14 @@ export default function Contact() {
 		<article id='contact'>
 			<ContactForm />
 			<p>Socials
+				<a
+					aria-label="icon-email"
+					alt="email"
+					className="icon icon-email"
+					href="mailto: dave@davethompsonisme.com"
+				>
+					<FontAwesomeIcon icon={faEnvelope} size="1x" />
+				</a>
 				<a
 					aria-label="icon-github"
 					alt="github"
