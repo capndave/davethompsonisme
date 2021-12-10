@@ -29,11 +29,10 @@ module.exports = {
 			resolve: 'gatsby-plugin-prettier-eslint',
 			options: {
 				watch: true,
-				initialScan: false,
+				initialScan: true,
 				prettier: {
 					patterns: [
 						// the pattern "**/*.{js,jsx,ts,tsx}" is not used because we will rely on `eslint --fix`
-						'**/*.{css,scss,less}',
 						'**/*.{json,json5}',
 						'**/*.{graphql}',
 						'**/*.{md,mdx}',
