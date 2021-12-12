@@ -4,8 +4,8 @@ import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-ic
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import ContactForm from '../components/ContactForm/ContactForm'
 
-export default function Contact() {
-	return (
+export default function Contact () {
+  return (
 		<article id='contact'>
 			<ContactForm />
 			<p>Socials
@@ -47,5 +47,5 @@ export default function Contact() {
 
 			</p>
 		</article>
-	)
+  )
 }

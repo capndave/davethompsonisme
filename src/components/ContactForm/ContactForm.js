@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Label from '../Label/Label'
 
 const ContactForm = () => {
   const [state, setState] = useState({})
@@ -12,31 +13,31 @@ const ContactForm = () => {
   }
 
   return (
-		<form onSubmit={handleSubmit}>
-			<label>
-				Email
+		<form
+			id='contact-form'
+			onSubmit={handleSubmit}
+		>
+			<Label text='Email address'>
 				<input
 					name='Email'
 					onChange={handleChange}
 					value={state.Email}
 				/>
-			</label>
-			<label>
-				Subject
+			</Label>
+			<Label text='Subject'>
 				<input
 					name='Subject'
 					onChange={handleChange}
 					value={state.Subject}
 				/>
-			</label>
-			<label>
-				Message
+			</Label>
+			<Label text='Message'>
 				<textarea
 					name='Message'
 					onChange={handleChange}
 					value={state.Message}
 				/>
-			</label>
+			</Label>
 		</form>
   )
 }
