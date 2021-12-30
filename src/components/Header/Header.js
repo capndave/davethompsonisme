@@ -8,14 +8,14 @@ import './Header.css'
 import './title.css'
 
 const Header = (props) => {
-	const { windowSize } = useWindowSize()
+  const { windowSize } = useWindowSize()
 
-	/* Get title based on width of viewport */
-	const titleToUse = windowSize.innerWidth > 550
-		? <DesktopTitle className={'titleImage visible'} />
-		: <MobileTitle className={'titleImage visible'} />
+  /* Get title based on width of viewport */
+  const titleToUse = windowSize.innerWidth > 550
+    ? <DesktopTitle className={'titleImage visible'} />
+    : <MobileTitle className={'titleImage visible'} />
 
-	return (
+  return (
 		<header id='header'>
 			{titleToUse}
 			<Navbar
@@ -24,7 +24,7 @@ const Header = (props) => {
 				fadeIn={props.fadeIn}
 			/>
 		</header>
-	)
+  )
 }
 
 export default Header
