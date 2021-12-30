@@ -31,7 +31,6 @@ module.exports = {
         watch: true,
         initialScan: true,
         prettier: {
-          // patterns: '**/*.{graphql, html, js,json, json5, jsx, md, mdx, ts,tsx, yaml, yml}'
           patterns: [
             // the pattern "**/*.{js,jsx,ts,tsx}" is not used because we will rely on `eslint --fix`
             '**/*.{json,json5}',
