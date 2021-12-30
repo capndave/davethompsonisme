@@ -22,9 +22,22 @@
 
 .detail .inner {
 	padding: 20px;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;
+	animation-duration: 225ms;
 }
 
 /* h3 was pushing detail div down, correct for that */
 .detail h3 {
 	margin-top: 0;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
