@@ -1,4 +1,4 @@
-.label {
-	display: block;
-	background-color: blueviolet;
+.label-text {
+	font-size: .75rem;
+	text-align: start;
 }

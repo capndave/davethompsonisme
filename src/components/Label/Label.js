@@ -4,7 +4,7 @@ import './Label.css'
 function Label ({ text, children }) {
   return (
 		<label className='label'>
-			{text}
+			<div className='label-text'>{text}</div>
 			{children}
 		</label>
   )

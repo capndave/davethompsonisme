@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Label from '../Label/Label'
+import './ContactForm.css'
 
 const ContactForm = () => {
   const [state, setState] = useState({})
