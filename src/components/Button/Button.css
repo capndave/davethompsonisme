@@ -1,0 +1,14 @@
+.button {
+	background-color: var(--color-foreground);
+  border: 1px solid black;
+  border-radius: 3px;
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+	color: white;
+  font-family: inherit;
+  font-size: .75rem;
+  min-width: 100px;
+  max-width: 264px;
+  padding: .5rem;
+}

@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Label from '../Label/Label'
+import Button from '../Button/Button'
 import './ContactForm.css'
 
 const ContactForm = () => {
@@ -39,6 +40,7 @@ const ContactForm = () => {
 					value={state.Message}
 				/>
 			</Label>
+			<Button name='submit' text='Submit' />
 		</form>
   )
 }
