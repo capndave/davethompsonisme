@@ -17,7 +17,9 @@ const Header = (props) => {
 
   return (
 		<header id='header'>
-			{titleToUse}
+			<h1 id='title'>
+				{titleToUse}
+			</h1>
 			<Navbar
 				// visible={props.visible}
 				visible={true}
