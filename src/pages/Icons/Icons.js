@@ -19,6 +19,7 @@ const Icons = () => (
 			alt="github"
 			className="icon"
 			href="https://github.com/capndave"
+			target="_blank" rel="noreferrer"
 		>
 			<FontAwesomeIcon
 				icon={faGithub}
@@ -30,6 +31,7 @@ const Icons = () => (
 			alt="linkedin"
 			className="icon icon-linkedin"
 			href="https://www.linkedin.com/in/davethompsonisme/"
+			target="_blank" rel="noreferrer"
 		>
 			<FontAwesomeIcon icon={faLinkedin} size="2x" />
 		</a>
@@ -38,6 +40,7 @@ const Icons = () => (
 			alt="twitter"
 			className="icon icon-twitter"
 			href="https://twitter.com/capndavet"
+			target="_blank" rel="noreferrer"
 		>
 			<FontAwesomeIcon icon={faTwitter} size="2x" />
 		</a>
