@@ -2,6 +2,7 @@ import React from 'react'
 import ContactForm from '../components/ContactForm/ContactForm'
 import Icons from '../components/Icons/Icons'
 import useWindowSize from '../hooks/useWindowSize'
+import './contact.css'
 
 export default function Contact () {
   const { windowSize } = useWindowSize()
