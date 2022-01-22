@@ -4,10 +4,15 @@ import Button from '../Button/Button'
 import './ContactForm.css'
 
 const ContactForm = () => {
-  const [state, setState] = useState({})
+  const [state, setState] = useState({
+    Email: '',
+    Subject: '',
+    Message: ''
+  })
 
-  function handleSubmit () {
-    console.log('submitting')
+  function handleSubmit (event) {
+    event.preventDefault()
+    console.log('submitting', state)
   }
 
   function handleChange (event) {
@@ -40,7 +45,8 @@ const ContactForm = () => {
 					value={state.Message}
 				/>
 			</Label>
-			<Button name='submit' text='Submit' />
+			<Button
+				name='submit' text='Submit' />
 		</form>
   )
 }
