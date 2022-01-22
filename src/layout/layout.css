@@ -33,17 +33,17 @@ html, body, #root {
   min-height: 100vh;
 }
 
+#page {
+	height: 100%;
+	padding: 1rem; /* margin made projects page bug out on resize */
+}
+
 #page a {
 	color: var(--color-foreground);
 }
 
 #page a:hover {
 	opacity: .6;
-}
-
-#page {
-	margin: 1rem 1rem 0 1rem;
-	padding-bottom: 1rem;
 }
 
 /* General Use Shared Classes */
