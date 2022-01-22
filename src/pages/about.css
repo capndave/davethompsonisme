@@ -6,7 +6,7 @@ p {
     margin: 1rem 0 0 0;
 }
 
-#about-me p:first-of-type {
+#about p:first-of-type {
   margin: 0;
 }
 
