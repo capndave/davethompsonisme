@@ -29,20 +29,28 @@ html, body, #root {
 
 #app {
   background-color: var(--color-background);
-  text-align: center;
+	display: flex;
+	flex-direction: column;
   min-height: 100vh;
 }
 
 #page {
-	height: 100%;
+	align-items: center;
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#page-content {
 	padding: 1rem; /* margin made projects page bug out on resize */
 }
 
-#page a {
+#page-content a {
 	color: var(--color-foreground);
 }
 
-#page a:hover {
+#page-content a:hover {
 	opacity: .6;
 }
 
@@ -54,6 +62,10 @@ html, body, #root {
 
 .justify-content-space-around {
   justify-content: space-around;
+}
+
+.max-width-1000px {
+	max-width: 1000px;
 }
 
 .opacity-0 {

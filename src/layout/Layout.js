@@ -41,7 +41,9 @@ export default function Layout ({ children }) {
 		<div id='app'>
 			<Header shouldAnimate={shouldAnimate} />
 			<main id='page'>
-				{children}
+				<article id='page-content'>
+					{children}
+				</article>
 			</main>
 		</div>
   )
