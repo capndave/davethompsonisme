@@ -1,5 +1,4 @@
 #contact-form {
-	background-color:pink;
 	display: inline-block;
 	min-width: calc(320px - 2rem);
 	margin: 0px!important;
@@ -11,9 +10,9 @@
 	border: none;
 	border-radius: 3px;
 	font-family: inherit;
-	font-size: 1rem;
-	padding: .5rem;
-	width: calc(100% - 1rem);
+	font-size: .75rem;
+	padding: .33rem;
+	width: calc(100% - .7rem);
 }
 
 #contact-form button {
