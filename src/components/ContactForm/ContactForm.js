@@ -19,6 +19,11 @@ const ContactForm = () => {
     setState({ ...state, [event.target.name]: event.target.value })
   }
 
+  /* TODO: finish and implement validation */
+  function validate (thingToValidate) {
+    console.log('validating', thingToValidate)
+  }
+
   return (
 		<form
 			id='contact-form'
