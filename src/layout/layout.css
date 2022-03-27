@@ -60,6 +60,10 @@ html, body, #root {
   display: flex;
 }
 
+.font-size-point-75-rem {
+	font-size: .75rem;
+}
+
 .justify-content-space-around {
   justify-content: space-around;
 }
