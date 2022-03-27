@@ -12,7 +12,7 @@ const Icons = () => (
 			className="icon icon-email"
 			href="mailto: dave@davethompsonisme.com"
 		>
-			<FontAwesomeIcon icon={faEnvelope} size="2x" />
+			<FontAwesomeIcon icon={faEnvelope} size="1x" />
 		</a>
 		<a
 			aria-label="icon-github"
@@ -23,7 +23,7 @@ const Icons = () => (
 		>
 			<FontAwesomeIcon
 				icon={faGithub}
-				size="2x"
+				size="1x"
 			/>
 		</a>
 		<a
@@ -33,7 +33,7 @@ const Icons = () => (
 			href="https://www.linkedin.com/in/davethompsonisme/"
 			target="_blank" rel="noreferrer"
 		>
-			<FontAwesomeIcon icon={faLinkedin} size="2x" />
+			<FontAwesomeIcon icon={faLinkedin} size="1x" />
 		</a>
 		<a
 			aria-label="icon-twitter"
@@ -42,7 +42,7 @@ const Icons = () => (
 			href="https://twitter.com/capndavet"
 			target="_blank" rel="noreferrer"
 		>
-			<FontAwesomeIcon icon={faTwitter} size="2x" />
+			<FontAwesomeIcon icon={faTwitter} size="1x" />
 		</a>
 	</p>
 )
