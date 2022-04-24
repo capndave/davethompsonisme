@@ -26,6 +26,13 @@ module.exports = {
       __key: 'pages'
     },
     {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'posts',
+        path: `${dirname}/posts`
+      }
+    },
+    {
       resolve: 'gatsby-plugin-prettier-eslint',
       options: {
         watch: true,
