@@ -90,7 +90,7 @@ function Projects () {
       technologies: ['HTML5', 'CSS', 'JavaScript', 'WebPack']
     },
     {
-      name: titleAsLink('Promise Neighborhoods', 'davethompsonisme.com/promiseneighborhoods'),
+      name: 'Promise Neighborhoods',
       builtWith: 'HTML, CSS, Javascript, Leaflet, Waypoints, and QGIS.',
       description: 'Former profile for the U.S. Department of Education\'s Promise Neighborhoods Initiative',
       image: promiseNeighborhoods,
