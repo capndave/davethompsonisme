@@ -1,12 +1,35 @@
 import React from 'react'
+import { graphql, Link } from 'gatsby'
 import './blog.css'
 
-function Blog () {
+function Blog ({ data }) {
+  const content = data.allMdx.nodes.map(({ id, excerpt, frontmatter, slug }) => (
+		<Link key={id} to={`/${slug}`}>
+			<h3>{frontmatter.title}</h3>
+		</Link>
+
+  ))
   return (
 		<article id='blog'>
-			blogs
+			{content}
 		</article>
   )
 }
 
 export default Blog
+
+export const query = graphql`
+  query SITE_INDEX_QUERY {
+    allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
+      nodes {
+        id
+        excerpt(pruneLength: 250)
+        frontmatter {
+          title
+          date(formatString: "YYYY MMMM Do")
+        }
+        slug
+      }
+    }
+  }
+`

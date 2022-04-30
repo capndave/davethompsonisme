@@ -1,8 +1,11 @@
+const siteMetadata = {
+  siteUrl: 'https://www.davethompsonisme.tld',
+  title: 'davethompsonisme',
+  description: 'Dave Thompson\'s blog and portfolio'
+}
+
 module.exports = {
-  siteMetadata: {
-    siteUrl: 'https://www.davethompsonisme.tld',
-    title: 'davethompsonisme'
-  },
+  siteMetadata,
   plugins: [
     'gatsby-plugin-styled-components',
     'gatsby-plugin-image',
@@ -29,7 +32,7 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'posts',
-        path: `${__dirname}/src/posts`
+        path: './src/posts'
       }
     },
     {
@@ -80,17 +83,17 @@ module.exports = {
       resolve: 'gatsby-plugin-feed',
       options: {
         query: `
-        {
-          site {
-            siteMetadata {
-              title
-              description
-              siteUrl
-              site_url: siteUrl
-            }
-          }
-        }
-      `,
+			{
+				site {
+					siteMetadata {
+						title
+						description
+						siteUrl
+						site_url: siteUrl
+					}
+				}
+			}
+		`,
         feeds: [
           {
             serialize: ({ query: { site, allMarkdownRemark } }) => {
@@ -105,24 +108,24 @@ module.exports = {
               })
             },
             query: `
-            {
-              allMarkdownRemark(
-                sort: { order: DESC, fields: [frontmatter___date] },
-              ) {
-                edges {
-                  node {
-                    excerpt
-                    html
-                    fields { slug }
-                    frontmatter {
-                      title
-                      date
-                    }
-                  }
-                }
-              }
-            }
-          `,
+					{
+						allMarkdownRemark(
+							sort: { order: DESC, fields: [frontmatter___date] },
+						) {
+							edges {
+								node {
+									excerpt
+									html
+									fields { slug }
+									frontmatter {
+										title
+										date
+									}
+								}
+							}
+						}
+					}
+				`,
             output: '/rss.xml',
             title: "Your Site's RSS Feed",
             // optional configuration to insert feed reference in pages:
