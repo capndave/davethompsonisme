@@ -4,10 +4,11 @@ import './blog.css'
 
 function Blog ({ data }) {
   const content = data.allMdx.nodes.map(({ id, excerpt, frontmatter, slug }) => (
-		<Link key={id} to={`/${slug}`}>
-			<h3>{frontmatter.title}</h3>
-		</Link>
-
+		<div key={id}>
+			<Link to={`/${slug}`}>
+				<h3>{frontmatter.title}</h3>
+			</Link>
+		</div>
   ))
   return (
 		<article id='blog'>

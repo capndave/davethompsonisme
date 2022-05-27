@@ -1,5 +1,5 @@
 const siteMetadata = {
-  siteUrl: 'https://www.davethompsonisme.tld',
+  siteUrl: 'https://www.davethompsonisme.com',
   title: 'davethompsonisme',
   description: 'Dave Thompson\'s blog and portfolio'
 }
@@ -32,7 +32,7 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'posts',
-        path: './src/posts'
+        path: `${__dirname}/src/posts/`
       }
     },
     {
@@ -74,8 +74,8 @@ module.exports = {
         siteUrl: 'https://davethompsonisme.com',
 
         // Query string parameters are inclued by default.
-        // Set `stripQueryString: true` if you don't want `/blog`
-        // and `/blog?tag=foobar` to be indexed separately
+        // Set `stripQueryString: true` if you don't want ` / blog`
+        // and `/ blog ? tag = foobar` to be indexed separately
         stripQueryString: true
       }
     },
@@ -84,16 +84,16 @@ module.exports = {
       options: {
         query: `
 			{
-				site {
-					siteMetadata {
-						title
+			site {
+			siteMetadata {
+			title
 						description
 						siteUrl
 						site_url: siteUrl
-					}
+		}
 				}
 			}
-		`,
+`,
         feeds: [
           {
             serialize: ({ query: { site, allMarkdownRemark } }) => {
@@ -108,24 +108,24 @@ module.exports = {
               })
             },
             query: `
-					{
-						allMarkdownRemark(
-							sort: { order: DESC, fields: [frontmatter___date] },
-						) {
+{
+	allMarkdownRemark(
+		sort: { order: DESC, fields: [frontmatter___date] },
+	) {
 							edges {
 								node {
-									excerpt
-									html
+				excerpt
+				html
 									fields { slug }
 									frontmatter {
-										title
-										date
-									}
-								}
-							}
-						}
-					}
-				`,
+					title
+					date
+				}
+			}
+		}
+	}
+}
+`,
             output: '/rss.xml',
             title: "Your Site's RSS Feed",
             // optional configuration to insert feed reference in pages:
